@@ -20,6 +20,7 @@
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -38,10 +39,10 @@
                 <h1 class="hero-title">
                     <span class="gradient-text">Van Phan</span>
                 </h1>
-                <h2 class="hero-subtitle">Computational Biologist & Machine Learning Researcher</h2>
+                <h2 class="hero-subtitle">Undergraduate Researcher in Computational Biology & Machine Learning</h2>
                 <p class="hero-description">
-                    Exploring the intersection of computational modeling, artificial intelligence, and biological systems. 
-                    Specializing in physics-informed neural networks, computer vision, and quantitative biology.
+                    B.S. Mathematics student at Georgia State University with expertise in physics-informed neural networks, 
+                    computer vision, and quantitative biology. Passionate about developing computational approaches to understand complex biological systems.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
@@ -88,8 +89,8 @@
                             <h3>Morphological Analysis of Retinal Pigment Epithelium</h3>
                         </div>
                         <p class="project-description">
-                            A comprehensive computational framework for quantitative analysis of cellular morphology in aging retinal tissue. 
-                            Implements advanced feature extraction from microscopy images and machine learning classification for age-related changes.
+                            Developed an automated, config-driven 7-step end-to-end machine learning pipeline for classifying Retinal Pigment Epithelial (RPE) cells during aging. 
+                            Extracted 133 morphological and texture-based features (LBP, GLCM, Gabor) from 326 RPE cell images, achieving 94%+ cross-validation F1-score using a stacking ensemble of XGBoost, LightGBM, and CatBoost.
                         </p>
                         
                         <div class="project-highlights">
@@ -99,11 +100,11 @@
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Stacking ensemble ML models</span>
+                                <span>94%+ F1-score classification</span>
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Feature importance analysis</span>
+                                <span>326 RPE cell images analyzed</span>
                             </div>
                         </div>
                         
@@ -129,22 +130,22 @@
                             <h3>Physics-Informed Neural Networks for Cancer Invasion</h3>
                         </div>
                         <p class="project-description">
-                            Advanced implementation of physics-informed machine learning for modeling collective cancer cell migration. 
-                            Solves coupled nonlinear partial differential equations using Fourier neural operators and PINNs.
+                            Engineered Physics-Informed Neural Networks (PINNs) to simulate collective cancer invasion dynamics. 
+                            Developed a framework utilizing Tensorized Fourier Neural Operators (TFNO) and PyTorch's autograd engine to encode physical laws directly into the model's loss function, providing data-efficient solutions for complex PDEs.
                         </p>
                         
                         <div class="project-highlights">
                             <div class="highlight-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Coupled PDE systems</span>
+                                <span>Two-species cancer invasion model</span>
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Fourier Neural Operators</span>
+                                <span>Tensorized Fourier Neural Operators</span>
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Physics-informed learning</span>
+                                <span>Data-efficient PDE solutions</span>
                             </div>
                         </div>
                         
@@ -160,6 +161,48 @@
                                 <i class="fab fa-github"></i> Source Code
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-briefcase"></i>
+                        Professional Experience
+                    </h2>
+                    <p class="section-subtitle">Research and teaching roles in computational biology</p>
+                </div>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3>Undergraduate Research Assistant and Near-peer Mentor</h3>
+                            <div class="experience-meta">
+                                <span class="company">Center for the Advancement of Students and Alumni, Georgia State University</span>
+                                <span class="period">Jun. 2024 – Present</span>
+                            </div>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Spearheaded a 3-member student team in two concurrent computational biology projects, developing wound healing simulations and morphological analysis of Retinal Pigment Epithelial (RPE) cells</li>
+                            <li>Presented research at Summer Undergraduate Research Symposium 2024 and Georgia State Undergraduate Research Conference 2025</li>
+                            <li>Provided near-peer mentorship for the Enhanced Physics-Informed Neural Networks for Collective Cancer Invasion project, winning best project at Summer Undergraduate Research Symposium 2025</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3>Chemistry Laboratory Teaching Assistant</h3>
+                            <div class="experience-meta">
+                                <span class="company">Georgia State University</span>
+                                <span class="period">Aug. 2025 – Present</span>
+                            </div>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Mentored 45 undergraduate students in CHEM 1151L (Survey of Chemistry I), improving understanding of fundamental principles through one-on-one guidance</li>
+                            <li>Enhanced student learning by evaluating pre-lab and post-lab reports for 10 experiments, providing detailed feedback on data interpretation and scientific writing</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -211,38 +254,43 @@
                 </div>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <h3><i class="fas fa-code"></i> Programming & Tools</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">Python</span>
-                            <span class="skill-tag">R</span>
-                            <span class="skill-tag">MATLAB</span>
-                            <span class="skill-tag">Julia</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">LaTeX</span>
+                            <span class="skill-tag">Command Line (Linux/MacOS)</span>
+                            <span class="skill-tag">Git/GitHub</span>
+                            <span class="skill-tag">CompuCell3D</span>
+                            <span class="skill-tag">Microsoft Office Suite</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3><i class="fas fa-robot"></i> Machine Learning</h3>
+                        <h3><i class="fas fa-robot"></i> ML/DL</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Physics-Informed Neural Networks (PINNs)</span>
+                            <span class="skill-tag">Seq2seq Models</span>
+                            <span class="skill-tag">Tensorized Fourier Neural Operators (TFNO)</span>
+                            <span class="skill-tag">PDE Modeling</span>
+                            <span class="skill-tag">Augmented Lagrangian method (ALM)</span>
+                            <span class="skill-tag">Ensemble Methods (Stacking, Boosting)</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Libraries</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">PyTorch</span>
                             <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">scikit-learn</span>
-                            <span class="skill-tag">XGBoost</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Data Science</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Scikit-learn</span>
                             <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">SciPy</span>
                             <span class="skill-tag">Matplotlib</span>
                             <span class="skill-tag">Seaborn</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-image"></i> Computer Vision</h3>
-                        <div class="skill-tags">
                             <span class="skill-tag">OpenCV</span>
-                            <span class="skill-tag">scikit-image</span>
-                            <span class="skill-tag">PIL</span>
+                            <span class="skill-tag">Scikit-image</span>
+                            <span class="skill-tag">Mahotas</span>
+                            <span class="skill-tag">Pillow</span>
                         </div>
                     </div>
                 </div>
@@ -260,27 +308,33 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>
-                            I am a computational biologist and machine learning researcher with a strong foundation in mathematics and physics. 
-                            My research focuses on developing innovative computational approaches to understand complex biological systems, 
-                            from cellular morphology to collective behavior in cancer invasion.
+                            I am an undergraduate researcher at Georgia State University pursuing a B.S. in Mathematics with a concentration in Computer Science (GPA: 4.16/4.30, expected graduation: May 2027). 
+                            My research focuses on developing innovative computational approaches to understand complex biological systems, from cellular morphology analysis to physics-informed neural networks for cancer invasion modeling.
                         </p>
                         <p>
-                            Currently pursuing advanced studies in computational biology, I combine traditional mathematical modeling 
-                            with modern machine learning techniques to tackle challenging problems in quantitative biology.
+                            As an Undergraduate Research Assistant and Near-peer Mentor at the Center for the Advancement of Students and Alumni, 
+                            I lead computational biology projects and mentor fellow students. I also serve as a Chemistry Laboratory Teaching Assistant, 
+                            guiding 45 students in fundamental scientific principles and laboratory techniques.
                         </p>
+                        <div class="education-highlight">
+                            <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                            <p><strong>Georgia State University, Atlanta, GA</strong><br>
+                            B.S. Mathematics, Concentration in Computer Science<br>
+                            GPA: 4.16/4.30 | Expected Graduation: May 2027</p>
+                        </div>
                     </div>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <div class="stat-number">2+</div>
+                            <div class="stat-number">3+</div>
                             <div class="stat-label">Research Projects</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">1000+</div>
-                            <div class="stat-label">Lines of Code</div>
+                            <div class="stat-number">94%+</div>
+                            <div class="stat-label">ML Model Accuracy</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">ML Frameworks</div>
+                            <div class="stat-number">45</div>
+                            <div class="stat-label">Students Mentored</div>
                         </div>
                     </div>
                 </div>
@@ -299,6 +353,10 @@
                 <div class="contact-content">
                     <div class="contact-info">
                         <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+14703507733">+1 (470) 350-7733</a>
+                        </div>
+                        <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <a href="mailto:vanthienphan2004.work@gmail.com">vanthienphan2004.work@gmail.com</a>
                         </div>
@@ -308,7 +366,7 @@
                         </div>
                         <div class="contact-item">
                             <i class="fab fa-linkedin"></i>
-                            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                            <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank" rel="noopener noreferrer">linkedin.com/in/van-phan-241770242</a>
                         </div>
                     </div>
                     <div class="contact-form">

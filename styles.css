@@ -460,6 +460,82 @@ body {
     margin-top: auto;
 }
 
+/* Experience Section */
+.experience-section {
+    padding: 6rem 0;
+    background: white;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3rem;
+}
+
+.experience-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.experience-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-xl);
+}
+
+.experience-header {
+    margin-bottom: 1.5rem;
+}
+
+.experience-header h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.experience-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.experience-meta .company {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.experience-meta .period {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.experience-points {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-points li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.experience-points li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 /* Research Section */
 .research-section {
     padding: 6rem 0;
@@ -586,6 +662,34 @@ body {
     line-height: 1.8;
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
+}
+
+.education-highlight {
+    background: rgba(99, 102, 241, 0.05);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.education-highlight h4 {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.education-highlight h4 i {
+    color: var(--primary-color);
+}
+
+.education-highlight p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .about-stats {
