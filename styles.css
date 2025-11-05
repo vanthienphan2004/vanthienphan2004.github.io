@@ -746,6 +746,7 @@ body {
     gap: 1.5rem;
     width: 100%;
     max-width: 500px;
+    align-items: center;
 }.contact-item {
     display: flex;
     align-items: center;
