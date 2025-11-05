@@ -3,84 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Van Phan - Data Science Portfolio</title>
+    <title>Van Phan - Computational Biology & Machine Learning Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="nav-content">
-            <a href="#" class="nav-brand">Van Phan</a>
-            <ul>
+            <a href="#" class="nav-brand">
+                <i class="fas fa-atom"></i>
+                Van Phan
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <header>
-        <h1>Van Phan - Data Science Portfolio</h1>
-        <p>Exploring the intersection of machine learning, computer vision, and physics-informed modeling</p>
-    </header>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Van Phan</span>
+                </h1>
+                <h2 class="hero-subtitle">Computational Biologist & Machine Learning Researcher</h2>
+                <p class="hero-description">
+                    Exploring the intersection of computational modeling, artificial intelligence, and biological systems. 
+                    Specializing in physics-informed neural networks, computer vision, and quantitative biology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-project-diagram"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Get in Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-element element-1"><i class="fas fa-dna"></i></div>
+                    <div class="floating-element element-2"><i class="fas fa-brain"></i></div>
+                    <div class="floating-element element-3"><i class="fas fa-microscope"></i></div>
+                    <div class="floating-element element-4"><i class="fas fa-chart-line"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
 
     <main>
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Morphological Feature Analysis of Retinal Pigment Epithelial Cells</h3>
-                    <p>A configuration-driven Python application for extracting, aggregating, and analyzing morphological features from Retinal Pigment Epithelium (RPE) image crops. The pipeline produces cleaned feature tables, trains a stacking ensemble classifier (XGBoost + LightGBM + CatBoost), performs feature importance analysis, and generates reproducible model artifacts.</p>
-                    
-                    <div class="tech-list">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">scikit-learn</span>
-                        <span class="tech-badge">XGBoost</span>
-                        <span class="tech-badge">LightGBM</span>
-                        <span class="tech-badge">CatBoost</span>
-                        <span class="tech-badge">OpenCV</span>
-                        <span class="tech-badge">scikit-image</span>
-                    </div>
-                    
-                    <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-flask"></i>
+                        Featured Research Projects
+                    </h2>
+                    <p class="section-subtitle">Cutting-edge applications of machine learning in biological sciences</p>
                 </div>
-
-                <div class="project-card">
-                    <h3>Physics-Informed Neural Networks for Collective Cancer Invasion</h3>
-                    <p>A comprehensive implementation of physics-informed neural networks (PINNs) and Fourier neural operators (FNOs) for modeling collective cancer invasion dynamics. This project solves coupled nonlinear partial differential equations describing the spatiotemporal evolution of leader and follower cancer cell populations using advanced machine learning techniques.</p>
-                    
-                    <div class="tech-list">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">PyTorch</span>
-                        <span class="tech-badge">NumPy</span>
-                        <span class="tech-badge">Matplotlib</span>
-                        <span class="tech-badge">CUDA</span>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Morphological Analysis of Retinal Pigment Epithelium</h3>
+                        </div>
+                        <p class="project-description">
+                            A comprehensive computational framework for quantitative analysis of cellular morphology in aging retinal tissue. 
+                            Implements advanced feature extraction from microscopy images and machine learning classification for age-related changes.
+                        </p>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>133+ morphological features extracted</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Stacking ensemble ML models</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Feature importance analysis</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">OpenCV</span>
+                            <span class="tech-badge">XGBoost</span>
+                            <span class="tech-badge">scikit-image</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
                     </div>
 
-                    <a href="https://github.com/vanthienphan2004/pinn-cancer-invasion" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>Physics-Informed Neural Networks for Cancer Invasion</h3>
+                        </div>
+                        <p class="project-description">
+                            Advanced implementation of physics-informed machine learning for modeling collective cancer cell migration. 
+                            Solves coupled nonlinear partial differential equations using Fourier neural operators and PINNs.
+                        </p>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Coupled PDE systems</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Fourier Neural Operators</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Physics-informed learning</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-badge">PyTorch</span>
+                            <span class="tech-badge">CUDA</span>
+                            <span class="tech-badge">NumPy</span>
+                            <span class="tech-badge">Matplotlib</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/vanthienphan2004/pinn-cancer-invasion" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a data science enthusiast with a background in mathematics and computational modeling. My work focuses on applying machine learning techniques to biological and physical systems, from image analysis of cellular structures to solving complex PDEs with neural networks.</p>
-            <p>Currently pursuing advanced studies in computational biology and physics-informed machine learning.</p>
-            </section>
+        <section id="research" class="research-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-microscope"></i>
+                        Research Focus
+                    </h2>
+                    <p class="section-subtitle">Bridging computational methods with biological discovery</p>
+                </div>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Physics-Informed Machine Learning</h3>
+                        <p>Developing neural networks that incorporate physical laws and domain knowledge for solving complex biological systems.</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Computational Biology</h3>
+                        <p>Applying quantitative methods and computer vision to understand cellular processes and tissue morphology.</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-chart-area"></i>
+                        </div>
+                        <h3>Mathematical Modeling</h3>
+                        <p>Creating predictive models of biological phenomena using differential equations and statistical methods.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out for collaborations or questions about my work.</p>
-            <p>Email: <a href="mailto:vanthienphan2004.work@gmail.com">vanthienphan2004.work@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/vanthienphan2004" target="_blank" rel="noopener noreferrer">vanthienphan2004</a></p>
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-tools"></i>
+                        Technical Expertise
+                    </h2>
+                    <p class="section-subtitle">Core competencies in computational research</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">MATLAB</span>
+                            <span class="skill-tag">Julia</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-robot"></i> Machine Learning</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">scikit-learn</span>
+                            <span class="skill-tag">XGBoost</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Data Science</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Seaborn</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-image"></i> Computer Vision</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">scikit-image</span>
+                            <span class="skill-tag">PIL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-user-graduate"></i>
+                        About
+                    </h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I am a computational biologist and machine learning researcher with a strong foundation in mathematics and physics. 
+                            My research focuses on developing innovative computational approaches to understand complex biological systems, 
+                            from cellular morphology to collective behavior in cancer invasion.
+                        </p>
+                        <p>
+                            Currently pursuing advanced studies in computational biology, I combine traditional mathematical modeling 
+                            with modern machine learning techniques to tackle challenging problems in quantitative biology.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Research Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Lines of Code</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">ML Frameworks</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </h2>
+                    <p class="section-subtitle">Let's discuss research collaborations</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:vanthienphan2004.work@gmail.com">vanthienphan2004.work@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/vanthienphan2004" target="_blank" rel="noopener noreferrer">github.com/vanthienphan2004</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <p>Interested in collaboration? Feel free to reach out!</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Van Phan. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Van Phan. Built with scientific curiosity and computational passion.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
