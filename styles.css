@@ -355,7 +355,6 @@ body {
 .section-subtitle {
     font-size: 1.2rem;
     color: var(--text-secondary);
-    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -732,6 +731,10 @@ body {
 .contact-section {
     padding: 6rem 0;
     background: white;
+}
+
+.contact-section .section-header {
+    margin-bottom: 2rem;
 }
 
 .contact-content {
