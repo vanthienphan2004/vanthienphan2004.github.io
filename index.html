@@ -1,384 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Van Phan - Computational Biology & Machine Learning Portfolio</title>
+    <title>Van Phan | Biocomputing & ML Research</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav class="navbar">
-        <div class="nav-content">
+        <div class="nav-content container">
             <a href="#" class="nav-brand">
-                <i class="fas fa-atom"></i>
+                <i class="fas fa-network-wired"></i>
                 Van Phan
             </a>
             <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hero">Overview</a></li>
+                <li><a href="#projects">Research</a></li>
+                <li><a href="#experience">Timeline</a></li>
+                <li><a href="#skills">Stack</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
-    <section id="hero" class="section hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="gradient-text">Van Phan</span>
-                </h1>
-                <h2 class="hero-subtitle">Undergraduate Researcher in Computational Biology & Machine Learning</h2>
-                <p class="hero-description">
-                    B.S. Mathematics student at Georgia State University with expertise in physics-informed neural networks, 
-                    computer vision, and quantitative biology. Passionate about developing computational approaches to understand complex biological systems.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-project-diagram"></i> View Projects
-                    </a>
-                    <a href="VanPhan_Resume.pdf" download="VanPhan_Resume.pdf" class="btn btn-secondary">
-                        <i class="fas fa-download"></i> Get Resume
-                    </a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-elements">
-                    <div class="floating-element element-1"><i class="fas fa-dna"></i></div>
-                    <div class="floating-element element-2"><i class="fas fa-brain"></i></div>
-                    <div class="floating-element element-3"><i class="fas fa-microscope"></i></div>
-                    <div class="floating-element element-4"><i class="fas fa-chart-line"></i></div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
-            </div>
-            <p>Scroll to explore</p>
-        </div>
-    </section>
-
     <main>
-    <section id="projects" class="section projects-section">
+
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <div class="hero-left">
+                    <p class="hero-intro">>_ Initializing Research Environment...</p>
+                    <h1 class="glitch">Scientific Computing<br>& Biological Systems</h1>
+                    <p class="hero-subtitle">
+                        Investigating the mathematical foundations of biological complexity through physics-informed
+                        machine learning and quantitative modeling.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-atom"></i> View Research
+                        </a>
+                        <a href="VanPhan_Resume.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-pdf"></i> Resume
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h4>3+</h4>
+                            <p>Research<br>Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>4.18</h4>
+                            <p>Major<br>GPA</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>2</h4>
+                            <p>Conference<br>Presentations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">
-                        <i class="fas fa-flask"></i>
-                        Featured Research Projects
-                    </h2>
-                    <p class="section-subtitle">Cutting-edge applications of machine learning in biological sciences</p>
+                    <h2><i class="fas fa-microscope"></i> Featured Research</h2>
+                    <span class="section-subtitle">Computational Biology & Physics-Informed ML</span>
                 </div>
                 <div class="project-grid">
+                    <!-- Project 1: Biocomputing (NEW) -->
                     <div class="project-card">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <i class="fas fa-eye"></i>
-                            </div>
-                            <h3>Morphological Analysis of Retinal Pigment Epithelium</h3>
-                        </div>
-                        <p class="project-description">
-                            Developed an automated, config-driven 7-step end-to-end machine learning pipeline for classifying Retinal Pigment Epithelial (RPE) cells during aging. 
-                            Extracted 133 morphological and texture-based features (LBP, GLCM, Gabor) from 326 RPE cell images, achieving 94%+ cross-validation F1-score using a stacking ensemble of XGBoost, LightGBM, and CatBoost.
-                        </p>
-                        
-                        <div class="project-highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>133+ morphological features extracted</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>94%+ F1-score classification</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>326 RPE cell images analyzed</span>
-                            </div>
-                        </div>
-                        
-                        <div class="tech-stack">
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">OpenCV</span>
-                            <span class="tech-badge">scikit-image</span>
-                            <span class="tech-badge">Stacking Ensembles</span>
-                        </div>
-                        
-                        <div class="project-links">
-                            <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                                <i class="fab fa-github"></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <h3>Physics-Informed Neural Networks for Cancer Invasion</h3>
-                        </div>
-                        <p class="project-description">
-                            Engineered Physics-Informed Neural Networks (PINNs) to simulate collective cancer invasion dynamics. 
-                            Developed a framework utilizing Tensorized Fourier Neural Operators (TFNO) and PyTorch's autograd engine to encode physical laws directly into the model's loss function, providing data-efficient solutions for complex PDEs.
-                        </p>
-                        
-                        <div class="project-highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Two-species cancer invasion model</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Tensorized Fourier Neural Operators</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Data-efficient PDE solutions</span>
-                            </div>
-                        </div>
-                        
-                        <div class="tech-stack">
-                            <span class="tech-badge">PyTorch</span>
-                            <span class="tech-badge">CUDA</span>
-                            <span class="tech-badge">PINNs</span>
-                            <span class="tech-badge">TFNO</span>
-                        </div>
-                        
-                        <div class="project-links">
-                            <a href="https://github.com/vanthienphan2004/pinn-cancer-invasion" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                                <i class="fab fa-github"></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    <section id="experience" class="section experience-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <i class="fas fa-briefcase"></i>
-                        Professional Experience
-                    </h2>
-                    <p class="section-subtitle">Research and teaching roles in computational biology</p>
-                </div>
-                <div class="experience-grid">
-                    <div class="experience-card">
-                        <div class="experience-header">
-                            <h3>Undergraduate Research Assistant and Near-peer Mentor</h3>
-                            <div class="experience-meta">
-                                <span class="company">Center for the Advancement of Students and Alumni, Georgia State University</span>
-                                <span class="period">Jun. 2024 – Present</span>
-                            </div>
-                        </div>
-                        <ul class="experience-points">
-                            <li>Spearheaded a 3-member student team in two concurrent computational biology projects, developing wound healing simulations and morphological analysis of Retinal Pigment Epithelial (RPE) cells, resulting in successful research presentations at the Summer Undergraduate Research Symposium 2024 and the Georgia State Undergraduate Research Conference 2025.</li>
-                            <li>Provided near-peer mentorship for the Enhanced Physics-Informed Neural Networks for Collective Cancer Invasion project, winning best project at Summer Undergraduate Research Symposium 2025</li>
-                        </ul>
-                    </div>
-
-                    <div class="experience-card">
-                        <div class="experience-header">
-                            <h3>Chemistry Laboratory Teaching Assistant</h3>
-                            <div class="experience-meta">
-                                <span class="company">Georgia State University</span>
-                                <span class="period">Aug. 2025 – Present</span>
-                            </div>
-                        </div>
-                        <ul class="experience-points">
-                            <li>Mentored 45 undergraduate students in CHEM 1151L (Survey of Chemistry I), improving understanding of fundamental principles through one-on-one guidance</li>
-                            <li>Enhanced student learning by evaluating pre-lab and post-lab reports for 10 experiments, providing detailed feedback on data interpretation and scientific writing</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    <section id="research" class="section research-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <i class="fas fa-microscope"></i>
-                        Research Focus
-                    </h2>
-                    <p class="section-subtitle">Bridging computational methods with biological discovery</p>
-                </div>
-                <div class="research-grid">
-                    <div class="research-card">
-                        <div class="research-icon">
+                        <div class="project-icon">
                             <i class="fas fa-brain"></i>
                         </div>
-                        <h3>Physics-Informed Machine Learning</h3>
-                        <p>Developing neural networks that incorporate physical laws and domain knowledge for solving complex biological systems.</p>
+                        <h3>Neuromorphic Biocomputing</h3>
+                        <p class="project-desc">
+                            Simulating "wetware" logic gates using FitzHugh-Nagumo and Hodgkin-Huxley models.
+                            Demonstrated how signaling dynamics in FHN neurons can perform Boolean AND operations
+                            through phase space trajectory analysis and coincidence detection.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Diff. Equations</span>
+                            <span class="tag">Biophysics</span>
+                            <span class="tag">Manim Vis</span>
+                        </div>
+                        <a href="https://github.com/vanthienphan2004/Mathematical-Modeling-Visualization-and-Sensitivity-Analysis-of-Neural-Signaling-Dynamics"
+                            target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
                     </div>
-                    <div class="research-card">
-                        <div class="research-icon">
+
+                    <!-- Project 2: PINNs Cancer -->
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>PINNs for Cancer Invasion</h3>
+                        <p class="project-desc">
+                            Developed a Physics-Informed Neural Network (PINN) framework to simulate collective cancer
+                            invasion.
+                            Integrated Tensorized Fourier Neural Operators (TFNO) to solve coupled PDEs governing tumor
+                            growth and matrix degradation with high data efficiency.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">PINNs</span>
+                            <span class="tag">PDEs</span>
+                            <span class="tag">TFNO</span>
+                        </div>
+                        <a href="https://github.com/vanthienphan2004/pinn-cancer-invasion" target="_blank"
+                            class="project-link">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                    </div>
+
+                    <!-- Project 3: RPE Morphology -->
+                    <div class="project-card">
+                        <div class="project-icon">
                             <i class="fas fa-eye"></i>
                         </div>
-                        <h3>Computational Biology</h3>
-                        <p>Applying quantitative methods and computer vision to understand cellular processes and tissue morphology.</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-chart-area"></i>
-                        </div>
-                        <h3>Mathematical Modeling</h3>
-                        <p>Creating predictive models of biological phenomena using differential equations and statistical methods.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    <section id="skills" class="section skills-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <i class="fas fa-tools"></i>
-                        Technical Expertise
-                    </h2>
-                    <p class="section-subtitle">Core competencies in computational research</p>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Programming & Tools</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">LaTeX</span>
-                            <span class="skill-tag">Command Line (Linux/MacOS)</span>
-                            <span class="skill-tag">Git/GitHub</span>
-                            <span class="skill-tag">CompuCell3D</span>
-                            <span class="skill-tag">Microsoft Office Suite</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-robot"></i> ML/DL</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Physics-Informed Neural Networks (PINNs)</span>
-                            <span class="skill-tag">Seq2seq Models</span>
-                            <span class="skill-tag">Tensorized Fourier Neural Operators (TFNO)</span>
-                            <span class="skill-tag">PDE Modeling</span>
-                            <span class="skill-tag">Augmented Lagrangian method (ALM)</span>
-                            <span class="skill-tag">Ensemble Methods (Stacking, Boosting)</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Libraries</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">Scikit-learn</span>
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">NumPy</span>
-                            <span class="skill-tag">SciPy</span>
-                            <span class="skill-tag">Matplotlib</span>
-                            <span class="skill-tag">Seaborn</span>
-                            <span class="skill-tag">OpenCV</span>
-                            <span class="skill-tag">Scikit-image</span>
-                            <span class="skill-tag">Mahotas</span>
-                            <span class="skill-tag">Pillow</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    <section id="about" class="section about-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <i class="fas fa-user-graduate"></i>
-                        About
-                    </h2>
-                </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            I am an undergraduate researcher at Georgia State University pursuing a B.S. in Mathematics with a concentration in Computer Science (GPA: 4.16/4.30, expected graduation: May 2027). 
-                            My research focuses on developing innovative computational approaches to understand complex biological systems, from cellular morphology analysis to physics-informed neural networks for cancer invasion modeling.
+                        <h3>Retinal Morphology Analysis</h3>
+                        <p class="project-desc">
+                            Engineered an end-to-end ML pipeline for classifying aging Retinal Pigment Epithelial cells.
+                            Extracted 133 morphological features and achieved >94% F1-score using a stacking ensemble of
+                            XGBoost and LightGBM models.
                         </p>
-                        <p>
-                            As an Undergraduate Research Assistant and Near-peer Mentor at the Center for the Advancement of Students and Alumni, 
-                            I lead computational biology projects and mentor fellow students. I also serve as a Chemistry Laboratory Teaching Assistant, 
-                            guiding 45 students in fundamental scientific principles and laboratory techniques.
-                        </p>
-                        <div class="education-highlight">
-                            <h4><i class="fas fa-graduation-cap"></i> Education</h4>
-                            <p><strong>Georgia State University, Atlanta, GA</strong><br>
-                            B.S. Mathematics, Concentration in Computer Science<br>
-                            GPA: 4.16/4.30 | Expected Graduation: May 2027</p>
+                        <div class="project-tags">
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Scikit-Image</span>
+                            <span class="tag">Ensemble ML</span>
+                            <span class="tag">Feature Eng</span>
+                        </div>
+                        <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging"
+                            target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-code-branch"></i> Academic Timeline</h2>
+                    <span class="section-subtitle">Research & Teaching Experience</span>
+                </div>
+
+                <div class="timeline">
+                    <!-- Current Role -->
+                    <div class="timeline-item active-dot">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">Jun. 2024 - Present</span>
+                        <div class="timeline-content">
+                            <h3>Undergraduate Research Assistant</h3>
+                            <span class="role">Center for the Advancement of Students & Alumni, GSU</span>
+                            <ul>
+                                <li>Spearheaded computational biology projects focusing on wound healing simulations and
+                                    RPE cell morphology.</li>
+                                <li>Presented findings at the 2024 Summer Undergraduate Research Symposium and 2025 GSU
+                                    Undergraduate Research Conference.</li>
+                                <li>Mentored peers on the "Enhanced PINNs for Cancer Invasion" project, which won Best
+                                    Project 2025.</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">3+</div>
-                            <div class="stat-label">Research Projects</div>
+
+                    <!-- Role 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">Aug. 2025 - Present</span>
+                        <div class="timeline-content">
+                            <h3>Chemistry Laboratory Teaching Assistant</h3>
+                            <span class="role">Georgia State University</span>
+                            <ul>
+                                <li>Instructional mentor for CHEM 1151L, guiding 45 students in laboratory techniques
+                                    and safety.</li>
+                                <li>Evaluated weekly lab reports, providing critical feedback on scientific writing and
+                                    data analysis.</li>
+                            </ul>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">Years of Research Experience</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">3</div>
-                            <div class="stat-label">Conferences</div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">Expected May 2027</span>
+                        <div class="timeline-content">
+                            <h3>B.S. Mathematics (Conc. Computer Science)</h3>
+                            <span class="role">Georgia State University</span>
+                            <ul>
+                                <li><strong>GPA:</strong> 4.18 / 4.30</li>
+                                <li>Focus: Mathematical Modeling, Machine Learning, Numerical Analysis.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-    <section id="contact" class="section contact-section">
+        <section id="skills" class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">
-                        <i class="fas fa-envelope"></i>
-                        Contact
-                    </h2>
-                    <p class="section-subtitle">Interested in collaboration? Feel free to reach out!</p>
+                    <h2><i class="fas fa-layer-group"></i> Technical Stack</h2>
+                    <span class="section-subtitle">Technologies & Frameworks</span>
                 </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+14703507733">+1 (470) 350-7733</a>
+
+                <div class="skills-wrapper">
+                    <div class="skill-group">
+                        <h4><i class="fas fa-code"></i> Languages & Core</h4>
+                        <div class="skill-list">
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">MATLAB</span>
+                            <span class="skill-pill">LaTeX</span>
+                            <span class="skill-pill">SQL</span>
+                            <span class="skill-pill">Git / GitHub</span>
+                            <span class="skill-pill">Bash / Zsh</span>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:vanthienphan2004.work@gmail.com">vanthienphan2004.work@gmail.com</a>
+                    </div>
+
+                    <div class="skill-group">
+                        <h4><i class="fas fa-brain"></i> Machine Learning</h4>
+                        <div class="skill-list">
+                            <span class="skill-pill">PyTorch</span>
+                            <span class="skill-pill">TensorFlow</span>
+                            <span class="skill-pill">PINNs</span>
+                            <span class="skill-pill">Neural Operators</span>
+                            <span class="skill-pill">Scikit-learn</span>
+                            <span class="skill-pill">XGBoost</span>
                         </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/vanthienphan2004" target="_blank" rel="noopener noreferrer">github.com/vanthienphan2004</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank" rel="noopener noreferrer">linkedin.com/in/van-phan-241770242</a>
+                    </div>
+
+                    <div class="skill-group">
+                        <h4><i class="fas fa-calculator"></i> Scientific Computing</h4>
+                        <div class="skill-list">
+                            <span class="skill-pill">NumPy</span>
+                            <span class="skill-pill">SciPy</span>
+                            <span class="skill-pill">OpenCV</span>
+                            <span class="skill-pill">Matplotlib</span>
+                            <span class="skill-pill">CompuCell3D</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <footer id="contact" class="footer">
+            <div class="container">
+                <p>&copy; 2025 Van Phan. Designed with <i class="fas fa-code"></i> and Math.</p>
+                <div style="margin-top: 1rem; font-size: 1.2rem; display: flex; justify-content: center; gap: 1.5rem;">
+                    <a href="#" onclick="copyEmail(event)" title="Click to copy email"><i
+                            class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/vanthienphan2004"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/van-phan-241770242/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.threads.net/@venditimintern" target="_blank"><i
+                            class="fa-brands fa-threads"></i></a>
+                </div>
+            </div>
+        </footer>
     </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Van Phan. Built with scientific curiosity and computational passion.</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
