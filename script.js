@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Animations removed as per request for "no moving elements"
+    // Automatically open external links in a new tab
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+        const href = link.getAttribute('href');
+        // Check if it's an external link or a file (not an internal anchor)
+        if (href && (href.startsWith('http') || href.endsWith('.pdf'))) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+        }
+    });
 });
 
 function copyEmail(e) {
