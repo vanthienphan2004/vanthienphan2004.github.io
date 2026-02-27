@@ -21,9 +21,9 @@
     --border-hover: #000000;
     --grid-color: rgba(0, 0, 0, 0.03);
 
-    /* Typography */
-    --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    /* Typography — Computer Modern (LaTeX) */
+    --font-heading: 'Computer Modern Serif', 'Outfit', serif;
+    --font-body: 'Computer Modern Sans', 'Inter', sans-serif;
 
     /* Layout */
     --container-width: 1200px;
