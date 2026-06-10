@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Van Phan — AI/ML researcher and engineer specializing in computer vision, medical AI, and computational biology. Georgia State University.">
-    <title>Van Phan | AI/ML Research & Engineering</title>
+        content="Van Phan — Mathematical biomedical researcher specializing in mechanistic modeling, PDE-based simulation, and biomedical data-driven methods. Georgia State University.">
+    <title>Van Phan | Mathematical Biomedical Research</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <canvas id="bg-canvas"></canvas>
     <nav class="navbar">
         <div class="nav-content container">
             <a href="#" class="nav-brand">
@@ -27,8 +28,8 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#hero">Overview</a></li>
                 <li><a href="#projects">Research</a></li>
-                <li><a href="#skills">Stack</a></li>
                 <li><a href="#experience">Timeline</a></li>
+                <li><a href="#skills">Stack</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
@@ -45,11 +46,9 @@
             <div class="container hero-content">
                 <div class="hero-left">
                     <p class="hero-intro">>_ Initializing Research Environment...</p>
-                    <h1>AI / Machine Learning<br>& Computational Biology</h1>
+                    <h1>Mathematical Biomedical Research</h1>
                     <p class="hero-subtitle">
-                        Building AI systems for biomedical discovery — from fine-tuning vision-language models for
-                        radiology to physics-informed neural networks for biological simulation.
-                    </p>
+                        Applying mathematical modeling, mechanistic simulation, and data-driven methods to biomedical discovery
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">
                             <i class="fas fa-atom"></i> View Research
@@ -60,15 +59,15 @@
                     </div>
                     <div class="hero-stats">
                         <div class="stat-item">
-                            <h4>5+</h4>
-                            <p>AI/ML<br>Projects</p>
+                            <h4 class="stat-count" data-target="4" data-suffix="+">4+</h4>
+                            <p>Research<br>Projects</p>
                         </div>
                         <div class="stat-item">
-                            <h4>4.18</h4>
+                            <h4 class="stat-count" data-target="4.12" data-decimals="2">4.12</h4>
                             <p>Major<br>GPA</p>
                         </div>
                         <div class="stat-item">
-                            <h4>2</h4>
+                            <h4 class="stat-count" data-target="4">4</h4>
                             <p>Conference<br>Presentations</p>
                         </div>
                     </div>
@@ -80,7 +79,7 @@
             <div class="container">
                 <div class="section-header reveal">
                     <h2><i class="fas fa-microscope"></i> Featured Research</h2>
-                    <span class="section-subtitle">AI / ML &bull; Computer Vision &bull; Scientific Computing</span>
+                    <span class="section-subtitle">Mathematical Modeling &bull; Biomedical Data &bull; Scientific Computing</span>
                 </div>
                 <div class="project-grid">
 
@@ -91,40 +90,33 @@
                         </div>
                         <h3>AutoMammo — AI Mammography</h3>
                         <p class="project-desc">
-                            Engineered a system to automatically classify and prioritize high-risk mammography cases.
-                            Fine-tuned <strong>Google MedGemma 1.5 4B-it</strong> vision-language model using
-                            <strong>LoRA</strong> and <strong>4-bit quantization</strong>. Achieved ROUGE-L: 0.6693,
-                            METEOR: 0.7187, and Word-Level F1: 0.6789.
+                            Developed a clinically-focused system that combines model-driven triage and automated report generation to accelerate mammography review for high-risk cases. Fine-tuned Google MedGemma-1.5-4B with LoRA and 4-bit quantization and integrated density- and BI-RADS-aware triage to prioritize urgent scans. Evaluation: ROUGE-L 0.6693, METEOR 0.7187, Word-Level F1 0.6789.
                         </p>
                         <div class="project-tags">
-                            <span class="tag tag-ai">MedGemma VLM</span>
-                            <span class="tag tag-ai">LoRA / QLoRA</span>
-                            <span class="tag tag-ai">Computer Vision</span>
+                            <span class="tag tag-ai">Clinical Modeling</span>
+                            <span class="tag tag-ai">Triage</span>
+                            <span class="tag tag-ai">MedGemma</span>
                         </div>
-                        <a href="https://github.com/vanthienphan2004/auto-mammo" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Repository
+                        <a href="https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/automammo-ai" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Writeup
                         </a>
                     </div>
 
-                    <!-- Project 2: RPE Morphology -->
+                    <!-- Project 2: Modeling Wound Healing -->
                     <div class="project-card reveal">
                         <div class="project-icon">
-                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-vials"></i>
                         </div>
-                        <h3>Retinal Morphology Analysis</h3>
+                        <h3>Modeling Wound Healing</h3>
                         <p class="project-desc">
-                            Developed an automated, config-driven 7-step end-to-end ML pipeline for RPE cell
-                            classification. Extracted 133 morphological/texture features and achieved
-                            <strong>90%+ cross-validation F1-score</strong> using a stacking ensemble
-                            (XGBoost, LightGBM, CatBoost) with a Logistic Regression meta-learner.
+                            Constructed a mechanistic cellular modeling framework for RPE wound healing using a Q-Potts model in CompuCell3D. Simulated purse-string contraction and cell-fusion repair, then used Monte Carlo sampling of Hamiltonian energy states to quantify closure dynamics; results show larger cellular volume constraints accelerate wound closure.
                         </p>
                         <div class="project-tags">
-                            <span class="tag tag-ai">Ensemble ML</span>
-                            <span class="tag tag-ai">Feature Engineering</span>
-                            <span class="tag">OpenCV</span>
-                            <span class="tag">Scikit-Image</span>
+                            <span class="tag tag-ai">CompuCell3D</span>
+                            <span class="tag tag-ai">Q-Potts</span>
+                            <span class="tag">Mechanistic Modeling</span>
                         </div>
-                        <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging"
+                        <a href="https://github.com/vanthienphan2004/Modeling-Wound-Healing-Without-Migration-and-Proliferation"
                             target="_blank" class="project-link">
                             <i class="fab fa-github"></i> Repository
                         </a>
@@ -135,118 +127,41 @@
                         <div class="project-icon">
                             <i class="fas fa-project-diagram"></i>
                         </div>
-                        <h3>PINNs for Cancer Invasion</h3>
+                        <h3>Enhanced PINNs for Cancer Invasion</h3>
                         <p class="project-desc">
-                            Engineered a PINNs model to simulate collective cancer invasion as a data-efficient,
-                            mesh-free solution for complex PDEs. Utilized <strong>Tensorized Fourier Neural
-                                Operators (TFNO)</strong> and explored Seq2Seq PINO and Augmented Lagrangian methods
-                            to improve solution accuracy.
+                            Developed Physics-Informed Neural Networks (PINNs) and operator-based solvers to model collective cancer invasion, embedding PDE constraints and boundary/initial conditions into the training loss for physics-consistent predictions. Explored Tensorized Fourier Neural Operators and Augmented Lagrangian techniques to improve stability and parameter inference in low-data regimes.
                         </p>
                         <div class="project-tags">
                             <span class="tag tag-ai">PINNs</span>
-                            <span class="tag tag-ai">PyTorch</span>
-                            <span class="tag">PDEs</span>
+                            <span class="tag tag-ai">PDE Modeling</span>
                             <span class="tag">TFNO</span>
+                            <span class="tag">Mechanistic Inference</span>
                         </div>
-                        <a href="https://github.com/vanthienphan2004/pinn-cancer-invasion" target="_blank"
+                        <a href="https://github.com/vanthienphan2004/Physics-Informed-Neural-Networks-for-Collective-Cancer-Invasion" target="_blank"
                             class="project-link">
                             <i class="fab fa-github"></i> Repository
                         </a>
                     </div>
 
-                    <!-- Project 4: Biocomputing -->
+                    <!-- Project 4: Morphological Feature Analysis -->
                     <div class="project-card reveal">
                         <div class="project-icon">
-                            <i class="fas fa-brain"></i>
+                            <i class="fas fa-eye"></i>
                         </div>
-                        <h3>Neuromorphic Biocomputing</h3>
+                        <h3>Morphological Feature Analysis (RPE)</h3>
                         <p class="project-desc">
-                            Simulating biological "wetware" logic gates using FitzHugh-Nagumo and Hodgkin-Huxley
-                            models. Demonstrated how neural signaling dynamics perform Boolean AND operations
-                            through phase space trajectory analysis and coincidence detection.
+                            Built an automated pipeline to extract 133 morphological and texture features from RPE cell images and identify aging biomarkers. A stacking ensemble (XGBoost, LightGBM, CatBoost) with a Logistic Regression meta-learner achieved 90%+ cross-validation F1-score, highlighting LBP and geometric shape metrics as top predictors.
                         </p>
                         <div class="project-tags">
-                            <span class="tag tag-ai">Neural Simulation</span>
-                            <span class="tag">Diff. Equations</span>
-                            <span class="tag">Biophysics</span>
-                            <span class="tag">Manim</span>
+                            <span class="tag tag-ai">Biomarker Discovery</span>
+                            <span class="tag tag-ai">Feature Engineering</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Scikit-image</span>
                         </div>
-                        <a href="https://github.com/vanthienphan2004/Mathematical-Modeling-Visualization-and-Sensitivity-Analysis-of-Neural-Signaling-Dynamics"
+                        <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging"
                             target="_blank" class="project-link">
                             <i class="fab fa-github"></i> Repository
                         </a>
-                    </div>
-
-                    <!-- Project 5: Quant Trading Lab -->
-                    <div class="project-card reveal">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3>Quant Trading Lab — Financial Engineering</h3>
-                        <p class="project-desc">
-                            A comprehensive collection of quantitative finance projects implemented in Python, covering stochastic simulations (GBM, OU), derivatives pricing (Crank-Nicolson PDE), and volatility calibration. Implemented stat-arb strategies including pairs trading based on cointegration.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag tag-ai">Stat-Arb</span>
-                            <span class="tag tag-ai">Stochastic Calculus</span>
-                            <span class="tag">PDE Methods</span>
-                            <span class="tag">Backtesting</span>
-                        </div>
-                        <a href="https://github.com/vanthienphan2004/quant-trading-lab" target="_blank"
-                            class="project-link">
-                            <i class="fab fa-github"></i> Repository
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2><i class="fas fa-layer-group"></i> Technical Stack</h2>
-                    <span class="section-subtitle">AI / ML &bull; Scientific Computing &bull; Mathematical
-                        Modeling</span>
-                </div>
-
-                <div class="skills-wrapper">
-                    <div class="skill-group reveal">
-                        <h4><i class="fas fa-brain"></i> AI / Machine Learning</h4>
-                        <div class="skill-list">
-                            <span class="skill-pill">PyTorch</span>
-                            <span class="skill-pill">Hugging Face</span>
-                            <span class="skill-pill">LoRA / PEFT</span>
-                            <span class="skill-pill">Numerical PDEs</span>
-                            <span class="skill-pill">Stat-Arb</span>
-                            <span class="skill-pill">Scikit-learn</span>
-                            <span class="skill-pill">XGBoost</span>
-                            <span class="skill-pill">TensorFlow</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group reveal">
-                        <h4><i class="fas fa-calculator"></i> Scientific Computing</h4>
-                        <div class="skill-list">
-                            <span class="skill-pill">NumPy</span>
-                            <span class="skill-pill">Stochastic Calculus</span>
-                            <span class="skill-pill">Portfolio Optimization</span>
-                            <span class="skill-pill">SciPy</span>
-                            <span class="skill-pill">OpenCV</span>
-                            <span class="skill-pill">Pandas</span>
-                            <span class="skill-pill">Matplotlib</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group reveal">
-                        <h4><i class="fas fa-code"></i> Languages & Core</h4>
-                        <div class="skill-list">
-                            <span class="skill-pill">Python</span>
-                            <span class="skill-pill">MATLAB</span>
-                            <span class="skill-pill">SQL</span>
-                            <span class="skill-pill">LaTeX</span>
-                            <span class="skill-pill">Git / GitHub</span>
-                            <span class="skill-pill">Bash / Zsh</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -263,12 +178,12 @@
                     <!-- Current Role 1: RIMMES -->
                     <div class="timeline-item active-dot reveal">
                         <div class="timeline-dot"></div>
-                        <span class="timeline-date">Aug. 2025 — Present</span>
+                        <span class="timeline-date">Sep. 2025 — Present</span>
                         <div class="timeline-content">
-                            <h3>Researcher</h3>
-                            <span class="role">RIMMES, Georgia State University</span>
+                            <h3>Undergraduate Researcher</h3>
+                            <span class="role">RIMMES, Georgia State University (Advisor: Dr. Russell Jeter)</span>
                             <ul>
-                                <li>Collaborated with Dr. Russell Jeter to propose the The Density and BI-RADS – Aware Triage and Report Generation (DB-ATRG) System.</li>
+                                <li>Led a 3-member student team in DB-ATRG project, developing a system to automatically report clinical report and prioritize high-risk cases in mammography.</li>
                                 <li>Disseminated technical methodology through formal academic presentations at the Georgia State Undergraduate Research Conference (GSURC) 2026 and the Department of Mathematics symposium.</li>
                             </ul>
                         </div>
@@ -293,17 +208,14 @@
                     <!-- Current Role 2: Research -->
                     <div class="timeline-item active-dot reveal">
                         <div class="timeline-dot"></div>
-                        <span class="timeline-date">Jun. 2024 — Present</span>
+                        <span class="timeline-date">Jun. 2024 — Aug. 2025</span>
                         <div class="timeline-content">
                             <h3>Undergraduate Researcher & Near-peer Mentor</h3>
-                            <span class="role">Center for the Advancement of Students & Alumni, GSU</span>
+                            <span class="role">Center for the Advancement of Students & Alumni</span>
                             <ul>
-                                <li>Spearheaded computational biology projects focusing on wound healing simulations and
-                                    RPE cell morphology.</li>
-                                <li>Presented findings at the 2024 Summer Undergraduate Research Symposium and 2025 GSU
-                                    Undergraduate Research Conference.</li>
-                                <li>Mentored peers on the "Enhanced PINNs for Cancer Invasion" project, which won Best
-                                    Project 2025.</li>
+                                <li>Led computational biology projects focusing on wound healing simulations and RPE cell morphology.</li>
+                                <li>Presented findings at the 2024 Summer Undergraduate Research Symposium and 2025 GSU Undergraduate Research Conference.</li>
+                                <li>Provided near-peer mentorship and research support to students in the Math Path Program.</li>
                             </ul>
                         </div>
                     </div>
@@ -316,9 +228,76 @@
                             <h3>B.S. Mathematics</h3>
                             <span class="role">Georgia State University</span>
                             <ul>
-                                <li><strong>GPA:</strong> 4.18 / 4.30</li>
+                                <li><strong>GPA:</strong> 4.12 / 4.30</li>
                                 <li>Focus: Machine Learning, Mathematical Modeling, Numerical Analysis.</li>
+                                <li><strong>Relevant Coursework:</strong> Linear Algebra, Differential Equations, Mathematical Biology, Biostatistics, Optimization, Numerical Analysis, Analysis, Modern Algebra, Probability & Statistics, Applied Combinatorics, Calculus, Computer Science.</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2><i class="fas fa-layer-group"></i> Technical Stack</h2>
+                    <span class="section-subtitle">Mathematical Biomedical Research &bull; Computational Tools</span>
+                </div>
+
+                <div class="skills-wrapper">
+                    <div class="skill-group reveal">
+                        <h4><i class="fas fa-brain"></i> AI / Machine Learning</h4>
+                        <div class="skill-list">
+                            <span class="skill-pill">LLMs</span>
+                            <span class="skill-pill">Fine-Tuning</span>
+                            <span class="skill-pill">Quantization</span>
+                            <span class="skill-pill">Transformers</span>
+                            <span class="skill-pill">TRL</span>
+                            <span class="skill-pill">Hugging Face</span>
+                            <span class="skill-pill">Ensemble Methods</span>
+                            <span class="skill-pill">PyTorch</span>
+                            <span class="skill-pill">TensorFlow</span>
+                            <span class="skill-pill">Scikit-learn</span>
+                            <span class="skill-pill">XGBoost</span>
+                            <span class="skill-pill">LightGBM</span>
+                            <span class="skill-pill">CatBoost</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group reveal">
+                        <h4><i class="fas fa-calculator"></i> Scientific & Math Modeling</h4>
+                        <div class="skill-list">
+                            <span class="skill-pill">Physics-Informed Neural Networks</span>
+                            <span class="skill-pill">PDE Modeling</span>
+                            <span class="skill-pill">Tensorized Fourier Neural Operators</span>
+                            <span class="skill-pill">Augmented Lagrangian Method</span>
+                            <span class="skill-pill">Q-Potts Cellular Modeling</span>
+                            <span class="skill-pill">Monte Carlo Evaluation</span>
+                            <span class="skill-pill">NumPy</span>
+                            <span class="skill-pill">SciPy</span>
+                            <span class="skill-pill">OpenCV</span>
+                            <span class="skill-pill">Scikit-image</span>
+                            <span class="skill-pill">Pandas</span>
+                            <span class="skill-pill">Matplotlib</span>
+                            <span class="skill-pill">Mahotas</span>
+                            <span class="skill-pill">Pillow</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group reveal">
+                        <h4><i class="fas fa-code"></i> Programming & Tools</h4>
+                        <div class="skill-list">
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">Julia</span>
+                            <span class="skill-pill">R</span>
+                            <span class="skill-pill">MATLAB</span>
+                            <span class="skill-pill">SQL</span>
+                            <span class="skill-pill">Git / GitHub</span>
+                            <span class="skill-pill">Linux / CLI</span>
+                            <span class="skill-pill">LaTeX</span>
+                            <span class="skill-pill">CompuCell3D</span>
+                            <span class="skill-pill">Microsoft Office Suite</span>
                         </div>
                     </div>
                 </div>
@@ -327,7 +306,7 @@
 
         <footer id="contact" class="footer">
             <div class="container">
-                <p>&copy; 2025 Van Phan. Designed with <i class="fas fa-code"></i> and Math.</p>
+                <p>&copy; 2026 Van Phan. Designed with <i class="fas fa-code"></i> and Math.</p>
                 <div style="margin-top: 1rem; font-size: 1.2rem; display: flex; justify-content: center; gap: 1.5rem;">
                     <a href="#" onclick="copyEmail(event)" title="Click to copy email"><i
                             class="fas fa-envelope"></i></a>
@@ -341,6 +320,11 @@
 
         <!-- Toast notification -->
         <div class="toast" id="toast"></div>
+
+        <!-- Floating scroll indicator/button -->
+        <button class="scroll-arrow-btn" id="scrollArrowBtn" aria-label="Scroll navigation">
+            <i class="fas fa-arrow-down"></i>
+        </button>
     </main>
 
     <script src="script.js"></script>
