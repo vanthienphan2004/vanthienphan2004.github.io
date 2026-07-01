@@ -1,6 +1,6 @@
-# Computational Biology & Machine Learning Portfolio
+# Health Informatics & Computational Medicine Portfolio
 
-A modern, scientific portfolio showcasing research in computational biology and physics-informed machine learning.
+A modern, scientific portfolio showcasing research in human-centered Health Informatics, Computational Medicine, and Biomedical Sciences.
 
 ## 🌟 Features
 

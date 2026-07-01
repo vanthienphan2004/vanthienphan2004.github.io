@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Van Phan — Mathematical biomedical researcher specializing in mechanistic modeling, PDE-based simulation, and biomedical data-driven methods. Georgia State University.">
-    <title>Van Phan | Mathematical Biomedical Research</title>
+        content="Van Phan — Researcher specializing in human-centered Health Informatics, Computational Medicine, and Biomedical Sciences. Georgia State University.">
+    <title>Van Phan | Health Informatics & Computational Medicine</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,9 +46,10 @@
             <div class="container hero-content">
                 <div class="hero-left">
                     <p class="hero-intro">>_ Initializing Research Environment...</p>
-                    <h1>Mathematical Biomedical Research</h1>
+                    <h1>Health Informatics & Computational Medicine</h1>
                     <p class="hero-subtitle">
-                        Applying mathematical modeling, mechanistic simulation, and data-driven methods to biomedical discovery
+                        Applying human-centered informatics, computational medicine, and data-driven biomedical sciences
+                        to accelerate clinical discovery and improve patient outcomes.
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-outline">
                             <i class="fas fa-atom"></i> View Research
@@ -79,7 +80,8 @@
             <div class="container">
                 <div class="section-header reveal">
                     <h2><i class="fas fa-microscope"></i> Featured Research</h2>
-                    <span class="section-subtitle">Mathematical Modeling &bull; Biomedical Data &bull; Scientific Computing</span>
+                    <span class="section-subtitle">Health Informatics &bull; Computational Medicine &bull; Translational
+                        Sciences</span>
                 </div>
                 <div class="project-grid">
 
@@ -90,14 +92,19 @@
                         </div>
                         <h3>AutoMammo — AI Mammography</h3>
                         <p class="project-desc">
-                            Developed a clinically-focused system that combines model-driven triage and automated report generation to accelerate mammography review for high-risk cases. Fine-tuned Google MedGemma-1.5-4B with LoRA and 4-bit quantization and integrated density- and BI-RADS-aware triage to prioritize urgent scans. Evaluation: ROUGE-L 0.6693, METEOR 0.7187, Word-Level F1 0.6789.
+                            A human-centered clinical decision support system combining model-driven triage and
+                            automated clinical report generation to optimize mammography workflows. Fine-tuned Google
+                            MedGemma-1.5-4B using LoRA to generate precise reports, integrating density- and
+                            BI-RADS-aware triage to prioritize high-risk, urgent scans and reduce time-to-diagnosis for
+                            patients.
                         </p>
                         <div class="project-tags">
                             <span class="tag tag-ai">Clinical Modeling</span>
                             <span class="tag tag-ai">Triage</span>
                             <span class="tag tag-ai">MedGemma</span>
                         </div>
-                        <a href="https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/automammo-ai" target="_blank" class="project-link">
+                        <a href="https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/automammo-ai"
+                            target="_blank" class="project-link">
                             <i class="fas fa-external-link-alt"></i> Writeup
                         </a>
                     </div>
@@ -109,7 +116,11 @@
                         </div>
                         <h3>Modeling Wound Healing</h3>
                         <p class="project-desc">
-                            Constructed a mechanistic cellular modeling framework for RPE wound healing using a Q-Potts model in CompuCell3D. Simulated purse-string contraction and cell-fusion repair, then used Monte Carlo sampling of Hamiltonian energy states to quantify closure dynamics; results show larger cellular volume constraints accelerate wound closure.
+                            A computational medicine framework simulating Retinal Pigment Epithelium (RPE) wound healing
+                            to explore therapeutics for Age-related Macular Degeneration (AMD). Simulated cellular
+                            purse-string contraction and repair mechanisms using a Q-Potts model in CompuCell3D,
+                            utilizing Monte Carlo methods to quantify healing dynamics and accelerate therapeutic
+                            discoveries for vision preservation.
                         </p>
                         <div class="project-tags">
                             <span class="tag tag-ai">CompuCell3D</span>
@@ -129,7 +140,11 @@
                         </div>
                         <h3>Enhanced PINNs for Cancer Invasion</h3>
                         <p class="project-desc">
-                            Developed Physics-Informed Neural Networks (PINNs) and operator-based solvers to model collective cancer invasion, embedding PDE constraints and boundary/initial conditions into the training loss for physics-consistent predictions. Explored Tensorized Fourier Neural Operators and Augmented Lagrangian techniques to improve stability and parameter inference in low-data regimes.
+                            Physics-Informed Neural Networks (PINNs) and operator-based solvers simulating cancer
+                            invasion dynamics for computational pathology and clinical decision support. Integrated
+                            partial differential equations (PDEs) directly into neural network training to model
+                            collective cell migration, leveraging Fourier Neural Operators (TFNO) to enable stable,
+                            physics-consistent prediction under low-data constraints.
                         </p>
                         <div class="project-tags">
                             <span class="tag tag-ai">PINNs</span>
@@ -137,8 +152,8 @@
                             <span class="tag">TFNO</span>
                             <span class="tag">Mechanistic Inference</span>
                         </div>
-                        <a href="https://github.com/vanthienphan2004/Physics-Informed-Neural-Networks-for-Collective-Cancer-Invasion" target="_blank"
-                            class="project-link">
+                        <a href="https://github.com/vanthienphan2004/Physics-Informed-Neural-Networks-for-Collective-Cancer-Invasion"
+                            target="_blank" class="project-link">
                             <i class="fab fa-github"></i> Repository
                         </a>
                     </div>
@@ -150,7 +165,10 @@
                         </div>
                         <h3>Morphological Feature Analysis (RPE)</h3>
                         <p class="project-desc">
-                            Built an automated pipeline to extract 133 morphological and texture features from RPE cell images and identify aging biomarkers. A stacking ensemble (XGBoost, LightGBM, CatBoost) with a Logistic Regression meta-learner achieved 90%+ cross-validation F1-score, highlighting LBP and geometric shape metrics as top predictors.
+                            An automated biomedical imaging pipeline extracting cell morphology and texture features to
+                            identify aging biomarkers in RPE cells. Developed a stacking ensemble classifier (XGBoost,
+                            LightGBM, CatBoost) to achieve a 90%+ cross-validation F1-score in detecting age-related
+                            changes, providing critical insights for preventive strategies in macular degeneration.
                         </p>
                         <div class="project-tags">
                             <span class="tag tag-ai">Biomarker Discovery</span>
@@ -183,8 +201,11 @@
                             <h3>Undergraduate Researcher</h3>
                             <span class="role">RIMMES, Georgia State University (Advisor: Dr. Russell Jeter)</span>
                             <ul>
-                                <li>Led a 3-member student team in DB-ATRG project, developing a system to automatically report clinical report and prioritize high-risk cases in mammography.</li>
-                                <li>Disseminated technical methodology through formal academic presentations at the Georgia State Undergraduate Research Conference (GSURC) 2026 and the Department of Mathematics symposium.</li>
+                                <li>Led a 3-member student team in DB-ATRG project, developing a system to automatically
+                                    report clinical report and prioritize high-risk cases in mammography.</li>
+                                <li>Disseminated technical methodology through formal academic presentations at the
+                                    Georgia State Undergraduate Research Conference (GSURC) 2026 and the Department of
+                                    Mathematics symposium.</li>
                             </ul>
                         </div>
                     </div>
@@ -213,9 +234,12 @@
                             <h3>Undergraduate Researcher & Near-peer Mentor</h3>
                             <span class="role">Center for the Advancement of Students & Alumni</span>
                             <ul>
-                                <li>Led computational biology projects focusing on wound healing simulations and RPE cell morphology.</li>
-                                <li>Presented findings at the 2024 Summer Undergraduate Research Symposium and 2025 GSU Undergraduate Research Conference.</li>
-                                <li>Provided near-peer mentorship and research support to students in the Math Path Program.</li>
+                                <li>Led computational biology projects focusing on wound healing simulations and RPE
+                                    cell morphology.</li>
+                                <li>Presented findings at the 2024 Summer Undergraduate Research Symposium and 2025 GSU
+                                    Undergraduate Research Conference.</li>
+                                <li>Provided near-peer mentorship and research support to students in the Math Path
+                                    Program.</li>
                             </ul>
                         </div>
                     </div>
@@ -229,8 +253,10 @@
                             <span class="role">Georgia State University</span>
                             <ul>
                                 <li><strong>GPA:</strong> 4.12 / 4.30</li>
-                                <li>Focus: Machine Learning, Mathematical Modeling, Numerical Analysis.</li>
-                                <li><strong>Relevant Coursework:</strong> Linear Algebra, Differential Equations, Mathematical Biology, Biostatistics, Optimization, Numerical Analysis, Analysis, Modern Algebra, Probability & Statistics, Applied Combinatorics, Calculus, Computer Science.</li>
+                                <li><strong>Relevant Coursework:</strong> Linear Algebra, Differential Equations,
+                                    Mathematical Biology, Biostatistics, Optimization, Numerical Analysis, Analysis,
+                                    Modern Algebra, Probability & Statistics, Applied Combinatorics, Calculus, Computer
+                                    Science.</li>
                             </ul>
                         </div>
                     </div>
