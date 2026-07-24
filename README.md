@@ -14,10 +14,10 @@ A modern, scientific portfolio showcasing research in human-centered Health Info
 
 ## 🧬 Research Projects Featured
 
-### 1. AutoMammo — AI Mammography
-A clinically-focused vision-language system combining model-driven triage and report generation (MedGemma fine-tuned with LoRA) to prioritize high-risk mammography.
+### 1. AutoMammo — DB-ATRG Mammography
+A human-centered clinical decision support framework (DB-ATRG) combining model-driven triage and automated clinical report generation. Fine-tuned MedGemma 1.5 (4B) using QLoRA on DMID and VinDr-Mammo datasets to prioritize high-risk, urgent scans (ACR Category D) and published as a PrePrint (doi: 10.64898/2026.07.22.26358655).
 
-**Key Technologies**: Python, PyTorch, LoRA, Hugging Face, MedGemma, Triage
+**Key Technologies**: Python, PyTorch, QLoRA, DB-ATRG, MedGemma 1.5, DMID, VinDr-Mammo, Triage
 
 ### 2. Modeling Wound Healing
 Constructed a CompuCell3D simulation utilizing Q-Potts cellular models and Monte Carlo energy evaluations to model Retinal Pigment Epithelium (RPE) healing.
