@@ -34,12 +34,17 @@ An automated pipeline extracting 133 shape/texture features classified using a s
 
 **Key Technologies**: OpenCV, Scikit-learn, XGBoost, LightGBM, CatBoost
 
+### 5. Antimicrobial & Anticoagulant Studies of Acharan Sulfate
+Evaluation of natural antimicrobial (100% bacterial inhibition), anticoagulant (89.40% activity), and thrombolytic (32.09% activity) properties of acharan sulfate extracted from *Lissachatina fulica*.
+
+**Key Technologies**: Gravimetric Analysis, Clotting Time Assay, Clot Lysis Assay, Biomedical Science
+
 ## 🎨 Layout Sections (DOM Order)
 
 - **Hero / Overview**: Terminal typing greeting, research summary, and animated academic statistics counters.
 - **Research / Projects**: Featured research cards with interactive mouse-glow features.
 - **Academic Timeline**: Academic achievements and research experience, including relevant coursework:
-  * Linear Algebra, Differential Equations, Mathematical Biology, Biostatistics, Optimization, Numerical Analysis, Analysis, Modern Algebra, Probability & Statistics, Applied Combinatorics, Calculus, Computer Science.
+  * Linear Algebra, Differential Equations, Numerical Analysis, Analysis, Modern Algebra, Optimization, Calculus, Biostatistics, Probability & Statistics, Applied Combinatorics, Computer Science.
 - **Technical Stack**: AI/Machine Learning, Scientific & Math Modeling, and Programming skill pills.
 - **Contact / Footer**: Social links with a click-to-copy email toast notification.
 
