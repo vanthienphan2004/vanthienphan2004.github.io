@@ -15,7 +15,7 @@ A modern, scientific portfolio showcasing research in human-centered Health Info
 ## 🧬 Research Projects Featured
 
 ### 1. AutoMammo — DB-ATRG Mammography
-A human-centered clinical decision support framework (DB-ATRG) combining model-driven triage and automated clinical report generation. Fine-tuned MedGemma 1.5 (4B) using QLoRA on DMID and VinDr-Mammo datasets to prioritize high-risk, urgent scans (ACR Category D) and published as a PrePrint (doi: 10.64898/2026.07.22.26358655).
+A human-centered clinical decision support framework (DB-ATRG) combining model-driven triage and automated clinical report generation. Fine-tuned MedGemma 1.5 (4B) using QLoRA on DMID and VinDr-Mammo datasets to prioritize high-risk, urgent scans (ACR Category D) with paper In Review (doi: 10.64898/2026.07.22.26358655).
 
 **Key Technologies**: Python, PyTorch, QLoRA, DB-ATRG, MedGemma 1.5, DMID, VinDr-Mammo, Triage
 
@@ -34,8 +34,8 @@ An automated pipeline extracting 133 shape/texture features classified using a s
 
 **Key Technologies**: OpenCV, Scikit-learn, XGBoost, LightGBM, CatBoost
 
-### 5. Antimicrobial & Anticoagulant Studies of Acharan Sulfate
-Evaluation of natural antimicrobial (100% bacterial inhibition), anticoagulant (89.40% activity), and thrombolytic (32.09% activity) properties of acharan sulfate extracted from *Lissachatina fulica*.
+### 5. Laboratory Rearing Model of Lissachatina fulica for Acharan Sulfate Extraction & Evaluation
+Established a laboratory rearing model of *Lissachatina fulica* using garlic essential oil and *Lactobacillus casei* for 100% inhibition of pathogenic bacteria, extracting acharan sulfate with 89.40% anticoagulant and 32.09% thrombolytic activity.
 
 **Key Technologies**: Gravimetric Analysis, Clotting Time Assay, Clot Lysis Assay, Biomedical Science
 
