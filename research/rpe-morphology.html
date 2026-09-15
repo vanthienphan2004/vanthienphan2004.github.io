@@ -52,9 +52,11 @@
                                 <li><a href="db-atrg.html" class="sub-nav-link">DB-ATRG Mammography</a></li>
                                 <li><a href="stroke-rehab.html" class="sub-nav-link">Time Series Classification</a></li>
                                 <li><a href="wound-healing.html" class="sub-nav-link">Modeling Wound Healing</a></li>
-                                <li><a href="rpe-morphology.html" class="sub-nav-link active">Morphological Analysis</a></li>
+                                <li><a href="rpe-morphology.html" class="sub-nav-link active">Morphological Analysis</a>
+                                </li>
                                 <li><a href="pinns-cancer.html" class="sub-nav-link">Enhanced PINNs</a></li>
-                                <li><a href="acharan-sulfate.html" class="sub-nav-link">Laboratory Rearing Model</a></li>
+                                <li><a href="acharan-sulfate.html" class="sub-nav-link">Laboratory Rearing Model</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -70,7 +72,8 @@
             <div class="sidebar-contact">
                 <ul class="contact-list">
                     <li class="contact-item">
-                        <a href="mailto:vanthienphan2004.work@gmail.com" onclick="copyEmail(event)" title="Click to copy email">
+                        <a href="mailto:vanthienphan2004.work@gmail.com" onclick="copyEmail(event)"
+                            title="Click to copy email">
                             <i class="far fa-envelope"></i>
                             <span>vanthienphan2004.work@gmail.com</span>
                         </a>
@@ -82,7 +85,8 @@
                         </a>
                     </li>
                     <li class="contact-item">
-                        <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="fab fa-linkedin"></i>
                             <span>LinkedIn</span>
                         </a>
@@ -94,13 +98,14 @@
                         </a>
                     </li>
                     <li class="contact-item">
-                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=SaQCGggAAAAJ" target="_blank" rel="noopener noreferrer">
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=SaQCGggAAAAJ"
+                            target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-graduation-cap"></i>
                             <span>Google Scholar</span>
                         </a>
                     </li>
                     <li class="contact-item">
-                        <a href="../VanPhan_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="../VanPhan_CV.pdf" target="_blank" rel="noopener noreferrer">
                             <i class="far fa-file-pdf"></i>
                             <span>Curriculum Vitae</span>
                         </a>
@@ -116,7 +121,8 @@
                     <i class="fas fa-arrow-left"></i> Back to all research
                 </a>
 
-                <h1 class="page-title">Morphological Feature Analysis of Retinal Pigment Epithelial Cells from Mice during Aging</h1>
+                <h1 class="page-title">Morphological Feature Analysis of Retinal Pigment Epithelial Cells from Mice
+                    during Aging</h1>
 
                 <!-- Research Metadata Table (Collaborators removed) -->
                 <table class="project-meta-table">
@@ -128,13 +134,15 @@
                         <tr>
                             <td class="meta-label">Presented At</td>
                             <td class="meta-val">
-                                &bull; <strong>Georgia State Undergraduate Research Conference (GSURC) 2025</strong> (Poster)
+                                &bull; <strong>Georgia State Undergraduate Research Conference (GSURC) 2025</strong>
+                                (Poster)
                             </td>
                         </tr>
                         <tr>
                             <td class="meta-label">Code Repository</td>
                             <td class="meta-val">
-                                <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging" target="_blank" class="text-link">
+                                <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging"
+                                    target="_blank" class="text-link">
                                     GitHub: vanthienphan2004/RPE-Morphological-Analysis
                                 </a>
                             </td>
@@ -145,33 +153,51 @@
                 <!-- Abstract -->
                 <h2 class="block-title">Abstract</h2>
                 <p>
-                    Age-related phenotypic degeneration of the Retinal Pigment Epithelium (RPE) plays a central pathological role in the progression of Age-related Macular Degeneration (AMD). Detecting subtle cellular morphological drift early in the aging process is critical for establishing preventive and therapeutic benchmarks.
+                    Age-related phenotypic degeneration of the Retinal Pigment Epithelium (RPE) plays a central
+                    pathological role in the progression of Age-related Macular Degeneration (AMD). Detecting subtle
+                    cellular morphological drift early in the aging process is critical for establishing preventive and
+                    therapeutic benchmarks.
                 </p>
                 <p>
-                    In this work, we developed an automated, end-to-end computer vision and machine learning pipeline to systematically extract and evaluate high-dimensional cellular features from microscopic images of C57BL/6J mouse RPE cells. Using <strong>OpenCV</strong> and <strong>scikit-image</strong>, we computed 133 distinct morphological, geometric, and texture features across a dataset of 326 segmented RPE cell images.
+                    In this work, we developed an automated, end-to-end computer vision and machine learning pipeline to
+                    systematically extract and evaluate high-dimensional cellular features from microscopic images of
+                    C57BL/6J mouse RPE cells. Using <strong>OpenCV</strong> and <strong>scikit-image</strong>, we
+                    computed 133 distinct morphological, geometric, and texture features across a dataset of 326
+                    segmented RPE cell images.
                 </p>
                 <p>
-                    A stacking ensemble architecture combining <strong>XGBoost</strong>, <strong>LightGBM</strong>, and <strong>CatBoost</strong> with a Logistic Regression meta-classifier achieved a <strong>90%+ cross-validation F1-score</strong> in distinguishing aged from young cellular states. Feature importance analysis revealed that Local Binary Patterns (LBP) texture descriptors alongside geometric shape metrics (circularity and aspect ratio) served as the primary discriminating biomarkers, highlighting structural irregularity as a hallmark of early retinal epithelial aging.
+                    A stacking ensemble architecture combining <strong>XGBoost</strong>, <strong>LightGBM</strong>, and
+                    <strong>CatBoost</strong> with a Logistic Regression meta-classifier achieved a <strong>90%+
+                        cross-validation F1-score</strong> in distinguishing aged from young cellular states. Feature
+                    importance analysis revealed that Local Binary Patterns (LBP) texture descriptors alongside
+                    geometric shape metrics (circularity and aspect ratio) served as the primary discriminating
+                    biomarkers, highlighting structural irregularity as a hallmark of early retinal epithelial aging.
                 </p>
 
                 <!-- Conference Poster -->
                 <h2 class="block-title">Conference Poster</h2>
                 <div class="poster-container">
-                    <a href="../images/morphological_poster.jpeg" target="_blank" rel="noopener noreferrer" class="poster-link" title="Click to view full-resolution poster">
-                        <img src="../images/morphological_poster.jpeg" alt="Morphological Feature Analysis of Retinal Pigment Epithelial Cells Poster" class="poster-img">
+                    <a href="../images/morphological_poster.jpeg" target="_blank" rel="noopener noreferrer"
+                        class="poster-link" title="Click to view full-resolution poster">
+                        <img src="../images/morphological_poster.jpeg"
+                            alt="Morphological Feature Analysis of Retinal Pigment Epithelial Cells Poster"
+                            class="poster-img">
                     </a>
                     <div class="poster-toolbar">
                         <span><i class="fas fa-search-plus"></i> Click poster to enlarge / download</span>
                         <div class="poster-toolbar-links">
-                            <a href="../images/morphological_poster.jpeg" target="_blank" rel="noopener noreferrer">Full Size Poster</a>
-                            <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging" target="_blank" rel="noopener noreferrer">Code Repository</a>
+                            <a href="../images/morphological_poster.jpeg" target="_blank" rel="noopener noreferrer">Full
+                                Size Poster</a>
+                            <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging"
+                                target="_blank" rel="noopener noreferrer">Code Repository</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Action Links -->
                 <div class="project-btn-row">
-                    <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging" class="btn-cv" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging"
+                        class="btn-cv" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i> View GitHub Repository
                     </a>
                 </div>
