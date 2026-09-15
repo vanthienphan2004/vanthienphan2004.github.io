@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="DB-ATRG: The Density and BI-RADS-Aware Triage and Automatic Report Generation System for Mammography — Van Phan.">
+    <title>DB-ATRG Mammography | Van Phan</title>
+
+    <!-- Font Awesome & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <a href="../index.html" class="mobile-title">Home</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <a href="../index.html" class="sidebar-brand">
+                    <div class="sidebar-title">Home</div>
+                </a>
+
+                <nav class="sidebar-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="../index.html" class="nav-link">Profile</a>
+                            </div>
+                        </li>
+                        <li class="nav-item has-active">
+                            <div class="nav-link-row">
+                                <a href="../research.html" class="nav-link">Research</a>
+                                <button type="button" class="dropdown-toggle-btn" aria-label="Toggle Research Menu">
+                                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                                </button>
+                            </div>
+                            <ul class="sub-nav-list">
+                                <li><a href="db-atrg.html" class="sub-nav-link active">DB-ATRG Mammography</a></li>
+                                <li><a href="stroke-rehab.html" class="sub-nav-link">Time Series Classification</a></li>
+                                <li><a href="wound-healing.html" class="sub-nav-link">Modeling Wound Healing</a></li>
+                                <li><a href="rpe-morphology.html" class="sub-nav-link">Morphological Analysis</a></li>
+                                <li><a href="pinns-cancer.html" class="sub-nav-link">Enhanced PINNs</a></li>
+                                <li><a href="acharan-sulfate.html" class="sub-nav-link">Laboratory Rearing Model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="../publications.html" class="nav-link">Publications &amp; Presentations</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Sidebar Contact -->
+            <div class="sidebar-contact">
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <a href="mailto:vanthienphan2004.work@gmail.com" onclick="copyEmail(event)" title="Click to copy email">
+                            <i class="far fa-envelope"></i>
+                            <span>vanthienphan2004.work@gmail.com</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="tel:+14703507733">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(470) 350-7733</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://github.com/vanthienphan2004" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=SaQCGggAAAAJ" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Google Scholar</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="../VanPhan_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-file-pdf"></i>
+                            <span>Curriculum Vitae</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-wrapper">
+            <div class="content-container">
+                <a href="../research.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to all research
+                </a>
+
+                <h1 class="page-title">DB-ATRG: Density and BI-RADS - Aware Triage and Automatic Report Generation for Mammography</h1>
+
+                <!-- Research Metadata Table (Collaborators removed) -->
+                <table class="project-meta-table">
+                    <tbody>
+                        <tr>
+                            <td class="meta-label">Advisor</td>
+                            <td class="meta-val">Dr. Russell Jeter (Georgia State University)</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Published At</td>
+                            <td class="meta-val">
+                                <strong>[In Review]</strong> <em>DB-ATRG: The Density and BI-RADS-Aware Triage and Automatic Report Generation System for Mammography</em> 
+                                (<a href="https://doi.org/10.64898/2026.07.22.26358655" target="_blank" class="text-link">doi: 10.64898/2026.07.22.26358655</a>)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Presented At</td>
+                            <td class="meta-val">
+                                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.35rem;">
+                                    <li>&bull; <strong>2026 SIAM Conference on Mathematics of Data Science</strong> (Poster)</li>
+                                    <li>&bull; <strong>Georgia State Undergraduate Research Conference (GSURC) 2026</strong> (Poster)</li>
+                                    <li>&bull; <strong>Department of Mathematics Symposium</strong>, Georgia State University</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">DOI / Paper</td>
+                            <td class="meta-val">
+                                <a href="https://doi.org/10.64898/2026.07.22.26358655" target="_blank" class="text-link">
+                                    https://doi.org/10.64898/2026.07.22.26358655
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Abstract -->
+                <h2 class="block-title">Abstract</h2>
+                <p>
+                    Timely review and accurate documentation of screening mammograms remain critical challenges in breast imaging due to high patient volumes, radiologist fatigue, and the elevated masking risk in dense breast tissue. We developed the <strong>Density and BI-RADS-Aware Triage and Report Generation (DB-ATRG)</strong> framework to automate diagnostic text generation and enable risk-based case prioritization, flagging scans with extremely dense breasts (ACR Category D) for supplemental screening.
+                </p>
+                <p>
+                    We fine-tuned the 4-billion parameter <strong>MedGemma 1.5</strong> vision-language model using <strong>QLoRA</strong> (Quantized Low-Rank Adaptation) on the combined <strong>DMID</strong> and <strong>VinDr-Mammo</strong> datasets. The model achieved an <strong>ACR Breast Density Accuracy of 0.7039</strong>, a <strong>ROUGE-L score of 0.8650</strong>, and a <strong>METEOR score of 0.9001</strong> for clinically faithful diagnostic report generation.
+                </p>
+                <p>
+                    Furthermore, to address queue delays for high-risk patients, we introduced a <em>Cumulative Urgency Score</em> simulation on a 100-case clinical cohort. The DB-ATRG prioritization captured <strong>100% of high-risk malignancies (BI-RADS 4 and 5)</strong> within the first 20% of the reading workload (compared to only 40% under traditional first-in, first-out review) and shifted the mean rank of severe cases from 42.8 down to 3.
+                </p>
+
+                <!-- Conference Poster -->
+                <h2 class="block-title">Conference Poster</h2>
+                <div class="poster-container">
+                    <a href="../images/dbatrg_poster.jpg" target="_blank" rel="noopener noreferrer" class="poster-link" title="Click to view full-resolution poster">
+                        <img src="../images/dbatrg_poster.jpg" alt="Accelerating Breast Cancer Diagnosis: AI-Driven Triage and Prioritization in Mammography Poster" class="poster-img">
+                    </a>
+                    <div class="poster-toolbar">
+                        <span><i class="fas fa-search-plus"></i> Click poster to enlarge / download</span>
+                        <div class="poster-toolbar-links">
+                            <a href="../images/dbatrg_poster.jpg" target="_blank" rel="noopener noreferrer">Full Size Poster</a>
+                            <a href="https://doi.org/10.64898/2026.07.22.26358655" target="_blank" rel="noopener noreferrer">View Paper (DOI)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Links -->
+                <div class="project-btn-row">
+                    <a href="https://doi.org/10.64898/2026.07.22.26358655" class="btn-cv" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i> Access Paper (DOI: 10.64898/2026.07.22.26358655)
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

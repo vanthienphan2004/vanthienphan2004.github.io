@@ -5,365 +5,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Van Phan — Researcher specializing in human-centered Health Informatics, Computational Medicine, and Biomedical Sciences. Georgia State University.">
-    <title>Van Phan | Health Informatics & Computational Medicine</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
+        content="Van Phan — Researcher in Health Informatics, Computational Medicine, and Biomedical Sciences at Georgia State University.">
+    <title>Van Phan | Profile & Research</title>
+
+    <!-- Font Awesome & CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <canvas id="bg-canvas"></canvas>
-    <nav class="navbar">
-        <div class="nav-content container">
-            <a href="#" class="nav-brand">
-                Van Phan
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#hero">Overview</a></li>
-                <li><a href="#projects">Research</a></li>
-                <li><a href="#experience">Timeline</a></li>
-                <li><a href="#skills">Stack</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <main>
-
-        <section id="hero" class="hero">
-            <div class="container hero-content">
-                <div class="hero-left">
-                    <p class="hero-intro">>_ Initializing Research Environment...</p>
-                    <h1>Health Informatics & Computational Medicine</h1>
-                    <p class="hero-subtitle">
-                        Applying human-centered informatics, computational medicine, and data-driven biomedical sciences
-                        to accelerate clinical discovery and improve patient outcomes.
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-outline">
-                            <i class="fas fa-atom"></i> View Research
-                        </a>
-                        <a href="VanPhan_Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-file-pdf"></i> Resume
-                        </a>
-                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=SaQCGggAAAAJ" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-graduation-cap"></i> Google Scholar
-                        </a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <h4 class="stat-count" data-target="5" data-suffix="+">5+</h4>
-                            <p>Research<br>Projects</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4 class="stat-count" data-target="4.11" data-decimals="2">4.11</h4>
-                            <p>Major<br>GPA</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4 class="stat-count" data-target="5" data-suffix="+">5+</h4>
-                            <p>Conference<br>Presentations</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2><i class="fas fa-microscope"></i> Featured Research</h2>
-                    <span class="section-subtitle">Health Informatics &bull; Computational Medicine &bull; Translational
-                        Sciences</span>
-                </div>
-                <div class="project-grid">
-
-                    <!-- Project 1: AutoMammo / DB-ATRG (AI/ML Flagship) -->
-                    <div class="project-card reveal">
-                        <div class="project-icon">
-                            <i class="fas fa-notes-medical"></i>
-                        </div>
-                        <h3>AutoMammo — DB-ATRG Mammography</h3>
-                        <p class="project-desc">
-                            A human-centered clinical decision support framework (DB-ATRG) combining model-driven triage and automated report generation for mammography. Fine-tuned MedGemma 1.5 (4B) using QLoRA on DMID and VinDr-Mammo datasets, achieving an ACR Density Accuracy of 0.7039, ROUGE-L of 0.8650, and METEOR of 0.9001. Captured 100% of high-risk malignancies (BI-RADS 4 & 5) within the first 20% of reading workload and shifted severe case mean rank from 42.8 down to 3.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag tag-ai">DB-ATRG</span>
-                            <span class="tag tag-ai">QLoRA</span>
-                            <span class="tag tag-ai">MedGemma 1.5</span>
-                            <span class="tag tag-ai">DMID & VinDr-Mammo</span>
-                        </div>
-                        <a href="https://doi.org/10.64898/2026.07.22.26358655"
-                            target="_blank" class="project-link">
-                            <i class="fas fa-file-alt"></i> PrePrint DOI
-                        </a>
-                    </div>
-
-                    <!-- Project 2: Modeling Wound Healing -->
-                    <div class="project-card reveal">
-                        <div class="project-icon">
-                            <i class="fas fa-vials"></i>
-                        </div>
-                        <h3>Modeling Wound Healing</h3>
-                        <p class="project-desc">
-                            A computational medicine framework simulating Retinal Pigment Epithelium (RPE) wound healing to explore therapeutics for Age-related Macular Degeneration (AMD). Simulated cellular purse-string contraction and repair mechanisms using a Q-Potts model in CompuCell3D, analyzing texture tensors and spatial points to prove that lower cellular volume constraints, higher wound radius, and larger affected area yield statistically slower wound closure.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag tag-ai">CompuCell3D</span>
-                            <span class="tag tag-ai">Q-Potts</span>
-                            <span class="tag">Mechanistic Modeling</span>
-                        </div>
-                        <a href="https://github.com/vanthienphan2004/Modeling-Wound-Healing-Without-Migration-and-Proliferation"
-                            target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Repository
-                        </a>
-                    </div>
-
-                    <!-- Project 3: PINNs Cancer -->
-                    <div class="project-card reveal">
-                        <div class="project-icon">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                        <h3>Enhanced PINNs for Cancer Invasion</h3>
-                        <p class="project-desc">
-                            Physics-Informed Neural Networks (PINNs) and operator-based solvers simulating cancer
-                            invasion dynamics for computational pathology and clinical decision support. Integrated
-                            partial differential equations (PDEs) directly into neural network training to model
-                            collective cell migration, leveraging Fourier Neural Operators (TFNO) to enable stable,
-                            physics-consistent prediction under low-data constraints.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag tag-ai">PINNs</span>
-                            <span class="tag tag-ai">PDE Modeling</span>
-                            <span class="tag">TFNO</span>
-                            <span class="tag">Mechanistic Inference</span>
-                        </div>
-                        <a href="https://github.com/vanthienphan2004/Physics-Informed-Neural-Networks-for-Collective-Cancer-Invasion"
-                            target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Repository
-                        </a>
-                    </div>
-
-                    <!-- Project 4: Morphological Feature Analysis -->
-                    <div class="project-card reveal">
-                        <div class="project-icon">
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <h3>Morphological Feature Analysis (RPE)</h3>
-                        <p class="project-desc">
-                            An automated biomedical imaging pipeline extracting cell morphology and texture features to
-                            identify aging biomarkers in RPE cells. Developed a stacking ensemble classifier (XGBoost,
-                            LightGBM, CatBoost) to achieve a 90%+ cross-validation F1-score in detecting age-related
-                            changes, providing critical insights for preventive strategies in macular degeneration.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag tag-ai">Biomarker Discovery</span>
-                            <span class="tag tag-ai">Feature Engineering</span>
-                            <span class="tag">OpenCV</span>
-                            <span class="tag">Scikit-image</span>
-                        </div>
-                        <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging"
-                            target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Repository
-                        </a>
-                    </div>
-
-                    <!-- Project 5: Laboratory Rearing Model of Lissachatina fulica -->
-                    <div class="project-card reveal">
-                        <div class="project-icon">
-                            <i class="fas fa-flask"></i>
-                        </div>
-                        <h3>Laboratory Rearing Model of Lissachatina fulica for Acharan Sulfate Extraction & Evaluation</h3>
-                        <p class="project-desc">
-                            Established a laboratory rearing model of <em>Lissachatina fulica</em> using garlic essential oil and <em>Lactobacillus casei</em> for 100% inhibition of pathogenic bacteria (<em>E. coli</em>, <em>S. aureus</em>, <em>Salmonella spp.</em>). Extracted acharan sulfate from snail flesh and mucus, achieving 89.40% anticoagulant activity within 30 minutes via clotting time assay and 32.09% thrombolytic activity within 1 hour via clot lysis assay.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag tag-ai">Biomedical Sciences</span>
-                            <span class="tag tag-ai">Gravimetric Analysis</span>
-                            <span class="tag">Clotting Assay</span>
-                            <span class="tag">Natural Products</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2><i class="fas fa-code-branch"></i> Academic Timeline</h2>
-                    <span class="section-subtitle">Research & Teaching Experience</span>
-                </div>
-
-                <div class="timeline">
-                    <!-- Current Role 1: RIMMES -->
-                    <div class="timeline-item active-dot reveal">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-date">Sep. 2025 — Present</span>
-                        <div class="timeline-content">
-                            <h3>Undergraduate Researcher</h3>
-                            <span class="role">RIMMES, Georgia State University (Advisor: Dr. Russell Jeter)</span>
-                            <ul>
-                                <li>Led a 3-member student team in DB-ATRG project, developing a framework to automatically generate clinical reports and prioritize high-risk mammography scans (ACR Category D).</li>
-                                <li>Paper [In Review]: <em>"DB-ATRG: The Density and BI-RADS-Aware Triage and Automatic Report Generation System for Mammography"</em> (<a href="https://doi.org/10.64898/2026.07.22.26358655" target="_blank" style="text-decoration: underline;">doi: 10.64898/2026.07.22.26358655</a>).</li>
-                                <li>Disseminated technical methodology through formal presentations at the 2026 SIAM Conference on Mathematics of Data Science, GSURC 2026, and GSU Math Symposium.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Current Role 2: TA -->
-                    <div class="timeline-item active-dot reveal">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-date">Aug. 2025 — Present</span>
-                        <div class="timeline-content">
-                            <h3>Chemistry Laboratory Teaching Assistant</h3>
-                            <span class="role">Georgia State University</span>
-                            <ul>
-                                <li>Instructional mentor for CHEM 1151L, guiding 45 students in laboratory techniques
-                                    and safety.</li>
-                                <li>Evaluated weekly lab reports, providing critical feedback on scientific writing and
-                                    data analysis.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Current Role 2: Research -->
-                    <div class="timeline-item active-dot reveal">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-date">Jun. 2024 — Aug. 2025</span>
-                        <div class="timeline-content">
-                            <h3>Undergraduate Researcher & Near-peer Mentor</h3>
-                            <span class="role">Center for the Advancement of Students & Alumni (Advisor: Dr. Yi Jiang)</span>
-                            <ul>
-                                <li>Led computational biology projects focusing on wound healing simulations and RPE
-                                    cell morphology.</li>
-                                <li>Presented findings at the 2024 Summer Undergraduate Research Symposium and 2025 GSU
-                                    Undergraduate Research Conference.</li>
-                                <li>Provided near-peer mentorship and research support to students in the Math Path
-                                    Program.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Education -->
-                    <div class="timeline-item reveal">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-date">Expected May 2027</span>
-                        <div class="timeline-content">
-                            <h3>B.S. Mathematics</h3>
-                            <span class="role">Georgia State University</span>
-                            <ul>
-                                <li><strong>GPA:</strong> 4.11 / 4.30</li>
-                                <li><strong>Relevant Coursework:</strong> Linear Algebra, Differential Equations,
-                                    Numerical Analysis, Analysis, Modern Algebra, Optimization, Calculus, Biostatistics,
-                                    Probability & Statistics, Applied Combinatorics, Computer Science.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2><i class="fas fa-layer-group"></i> Technical Stack</h2>
-                    <span class="section-subtitle">Mathematical Biomedical Research &bull; Computational Tools</span>
-                </div>
-
-                <div class="skills-wrapper">
-                    <div class="skill-group reveal">
-                        <h4><i class="fas fa-brain"></i> AI / Machine Learning</h4>
-                        <div class="skill-list">
-                            <span class="skill-pill">LLMs</span>
-                            <span class="skill-pill">Fine-Tuning</span>
-                            <span class="skill-pill">Quantization</span>
-                            <span class="skill-pill">Transformers</span>
-                            <span class="skill-pill">TRL</span>
-                            <span class="skill-pill">Hugging Face</span>
-                            <span class="skill-pill">Ensemble Methods</span>
-                            <span class="skill-pill">PyTorch</span>
-                            <span class="skill-pill">TensorFlow</span>
-                            <span class="skill-pill">Scikit-learn</span>
-                            <span class="skill-pill">XGBoost</span>
-                            <span class="skill-pill">LightGBM</span>
-                            <span class="skill-pill">CatBoost</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group reveal">
-                        <h4><i class="fas fa-calculator"></i> Scientific & Math Modeling</h4>
-                        <div class="skill-list">
-                            <span class="skill-pill">Physics-Informed Neural Networks</span>
-                            <span class="skill-pill">PDE Modeling</span>
-                            <span class="skill-pill">Tensorized Fourier Neural Operators</span>
-                            <span class="skill-pill">Augmented Lagrangian Method</span>
-                            <span class="skill-pill">Q-Potts Cellular Modeling</span>
-                            <span class="skill-pill">Monte Carlo Evaluation</span>
-                            <span class="skill-pill">NumPy</span>
-                            <span class="skill-pill">SciPy</span>
-                            <span class="skill-pill">OpenCV</span>
-                            <span class="skill-pill">Scikit-image</span>
-                            <span class="skill-pill">Pandas</span>
-                            <span class="skill-pill">Matplotlib</span>
-                            <span class="skill-pill">Mahotas</span>
-                            <span class="skill-pill">Pillow</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group reveal">
-                        <h4><i class="fas fa-code"></i> Programming & Tools</h4>
-                        <div class="skill-list">
-                            <span class="skill-pill">Python</span>
-                            <span class="skill-pill">Julia</span>
-                            <span class="skill-pill">R</span>
-                            <span class="skill-pill">MATLAB</span>
-                            <span class="skill-pill">SQL</span>
-                            <span class="skill-pill">Git / GitHub</span>
-                            <span class="skill-pill">Linux / CLI</span>
-                            <span class="skill-pill">LaTeX</span>
-                            <span class="skill-pill">CompuCell3D</span>
-                            <span class="skill-pill">Microsoft Office Suite</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer id="contact" class="footer">
-            <div class="container">
-                <p>&copy; 2026 Van Phan. Designed with <i class="fas fa-code"></i> and Math.</p>
-                <div style="margin-top: 1rem; font-size: 1.2rem; display: flex; justify-content: center; gap: 1.5rem;">
-                    <a href="#" onclick="copyEmail(event)" title="Click to copy email"><i
-                            class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/vanthienphan2004" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=SaQCGggAAAAJ" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                    <a href="https://www.threads.net/@venditimintern" target="_blank" title="Threads"><i
-                            class="fa-brands fa-threads"></i></a>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Toast notification -->
-        <div class="toast" id="toast"></div>
-
-        <!-- Floating scroll indicator/button -->
-        <button class="scroll-arrow-btn" id="scrollArrowBtn" aria-label="Scroll navigation">
-            <i class="fas fa-arrow-down"></i>
+    <!-- Mobile Sticky Header -->
+    <header class="mobile-header">
+        <a href="index.html" class="mobile-title">Home</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
-    </main>
+    </header>
 
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation (Desktop Left Column) -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <a href="index.html" class="sidebar-brand">
+                    <div class="sidebar-title">Home</div>
+                </a>
+
+                <nav class="sidebar-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="index.html" class="nav-link active">Profile</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="research.html" class="nav-link">Research</a>
+                                <button type="button" class="dropdown-toggle-btn" aria-label="Toggle Research Menu">
+                                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                                </button>
+                            </div>
+                            <ul class="sub-nav-list">
+                                <li><a href="research/db-atrg.html" class="sub-nav-link">DB-ATRG Mammography</a></li>
+                                <li><a href="research/stroke-rehab.html" class="sub-nav-link">Time Series Classification</a></li>
+                                <li><a href="research/wound-healing.html" class="sub-nav-link">Modeling Wound Healing</a></li>
+                                <li><a href="research/rpe-morphology.html" class="sub-nav-link">Morphological Analysis</a></li>
+                                <li><a href="research/pinns-cancer.html" class="sub-nav-link">Enhanced PINNs</a></li>
+                                <li><a href="research/acharan-sulfate.html" class="sub-nav-link">Laboratory Rearing Model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="publications.html" class="nav-link">Publications &amp; Presentations</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Contact & Social Details -->
+            <div class="sidebar-contact">
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <a href="mailto:vanthienphan2004.work@gmail.com" onclick="copyEmail(event)" title="Click to copy email">
+                            <i class="far fa-envelope"></i>
+                            <span>vanthienphan2004.work@gmail.com</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="tel:+14703507733">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(470) 350-7733</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://github.com/vanthienphan2004" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=SaQCGggAAAAJ" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Google Scholar</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="VanPhan_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-file-pdf"></i>
+                            <span>Curriculum Vitae</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-wrapper">
+            <div class="content-container">
+                <!-- About Me Section -->
+                <section class="profile-section">
+                    <h1 class="page-title">About Me</h1>
+                    
+                    <div class="profile-header-grid">
+                        <div class="profile-avatar-box">
+                            <img src="images/profile_picture.JPG" alt="Van Phan" class="profile-avatar-img">
+                        </div>
+
+                        <div class="profile-bio-box">
+                            <div class="profile-name">Van Phan</div>
+                            <div class="profile-role">Undergraduate Researcher &amp; B.S. Mathematics Student at Georgia State University</div>
+                            
+                            <p>
+                                Welcome to my website, where I showcase my research at the intersection of Health Informatics and Computational Medicine. As an undergraduate researcher and Mathematics student at Georgia State University, I am actively preparing to pursue a Ph.D. to develop data-driven, intelligent technologies for modern healthcare.
+                            </p>
+                            <p>
+                                Building upon five years of continuous interdisciplinary research — transitioning from wet-lab experimental design to data-driven clinical AI development — I aim to design reliable, simulated, and human-centered medical informatics systems that support clinicians in diagnosis and improve patient outcomes.
+                            </p>
+
+                            <div class="profile-actions">
+                                <a href="VanPhan_Resume.pdf" class="btn-cv" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-download"></i> Download CV
+                                </a>
+                                <a href="https://www.linkedin.com/in/van-phan-241770242/" class="btn-link-action" target="_blank" rel="noopener noreferrer">
+                                    Please connect with me on LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section class="education-section">
+                    <h2 class="block-title">Education</h2>
+                    <div class="education-block">
+                        <div class="education-title">B.S. Mathematics, Georgia State University (2023 – Expected May 2027)</div>
+                        <p style="margin-bottom: 0.5rem;"><strong>GPA:</strong> 4.11 / 4.30</p>
+                        <p class="coursework-text">
+                            <strong>Relevant Coursework:</strong> Linear Algebra, Differential Equations, Numerical Analysis, Analysis, Modern Algebra, Optimization, Calculus, Biostatistics, Probability and Statistics, Applied Combinatorics, Computer Science.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Research & Work Experience Section -->
+                <section class="experience-section">
+                    <h2 class="block-title">Research &amp; Work Experience</h2>
+
+                    <!-- RIMMES -->
+                    <div class="experience-block">
+                        <div class="experience-header">
+                            <div class="experience-title">Undergraduate Researcher</div>
+                            <div class="experience-date">Sep. 2025 – Present</div>
+                        </div>
+                        <div class="experience-org">RIMMES Program, Georgia State University (Advisor: Dr. Russell Jeter)</div>
+                        <ul class="academic-list">
+                            <li>Led a 3-member student team in DB-ATRG project, developing a framework to automatically generate clinical reports and prioritize high-risk mammography scans (ACR Category D).</li>
+                            <li>Paper [In Review]: <em>"DB-ATRG: The Density and BI-RADS-Aware Triage and Automatic Report Generation System for Mammography"</em> (<a href="https://doi.org/10.64898/2026.07.22.26358655" target="_blank" class="text-link">doi: 10.64898/2026.07.22.26358655</a>).</li>
+                            <li>Disseminated technical methodology through formal presentations at the 2026 SIAM Conference on Mathematics of Data Science, GSURC 2026, and GSU Math Symposium.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Chemistry TA -->
+                    <div class="experience-block">
+                        <div class="experience-header">
+                            <div class="experience-title">Chemistry Laboratory Teaching Assistant</div>
+                            <div class="experience-date">Aug. 2025 – Present</div>
+                        </div>
+                        <div class="experience-org">Georgia State University</div>
+                        <ul class="academic-list">
+                            <li>Mentored 50+ undergraduate students in Survey of Chemistry I and II, improving understanding of fundamental principles and reducing procedural errors through one-on-one guidance and demonstration of proper laboratory techniques.</li>
+                            <li>Evaluated weekly lab reports, providing critical feedback on scientific writing, data analysis, and laboratory hygiene.</li>
+                        </ul>
+                    </div>
+
+                    <!-- CASA -->
+                    <div class="experience-block">
+                        <div class="experience-header">
+                            <div class="experience-title">Undergraduate Researcher &amp; Near-peer Mentor</div>
+                            <div class="experience-date">Jun. 2024 – Aug. 2025</div>
+                        </div>
+                        <div class="experience-org">Center for the Advancement of Students &amp; Alumni (Advisor: Dr. Yi Jiang)</div>
+                        <ul class="academic-list">
+                            <li>Led a 3-member student team in two concurrent computational biology projects, developing wound healing simulations and morphological analysis of Retinal Pigment Epithelial (RPE) cells.</li>
+                            <li>Provided near-peer mentorship and research support to students in the Math Path Program, guiding research technique implementation and project development for the Enhanced Physics-Informed Neural Networks for Collective Cancer Invasion project.</li>
+                            <li>Presented findings at the Summer Undergraduate Research Symposium (SURS) and the Georgia State Undergraduate Research Conference (GSURC).</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Selected Honors & Awards -->
+                <section class="honors-section">
+                    <h2 class="block-title">Selected Honors &amp; Awards</h2>
+                    <ul class="academic-list">
+                        <li><strong>Best Project Award</strong> at Summer Undergraduate Research Symposium (2025)</li>
+                        <li><strong>President’s List</strong> at Georgia State University (2023, 2024, 2025, 2026)</li>
+                        <li><strong>Prospect Award (National Level) &amp; First Place (City Level)</strong> at Vietnam Science and Engineering Fair (ViSEF) (2022)</li>
+                        <li><strong>Consolation Prize</strong> at Engineering and Science Fair of Ho Chi Minh City University of Technology (2022)</li>
+                        <li><strong>Bronze Prize in Physics</strong> at the Ho Chi Minh City Excellent Student Contest (2019)</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 

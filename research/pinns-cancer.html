@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Enhanced Physics-Informed Neural Networks for Collective Cancer Invasion — Van Phan.">
+    <title>PINNs Cancer Invasion | Van Phan</title>
+
+    <!-- Font Awesome & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <a href="../index.html" class="mobile-title">Home</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <a href="../index.html" class="sidebar-brand">
+                    <div class="sidebar-title">Home</div>
+                </a>
+
+                <nav class="sidebar-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="../index.html" class="nav-link">Profile</a>
+                            </div>
+                        </li>
+                        <li class="nav-item has-active">
+                            <div class="nav-link-row">
+                                <a href="../research.html" class="nav-link">Research</a>
+                                <button type="button" class="dropdown-toggle-btn" aria-label="Toggle Research Menu">
+                                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                                </button>
+                            </div>
+                            <ul class="sub-nav-list">
+                                <li><a href="db-atrg.html" class="sub-nav-link">DB-ATRG Mammography</a></li>
+                                <li><a href="stroke-rehab.html" class="sub-nav-link">Time Series Classification</a></li>
+                                <li><a href="wound-healing.html" class="sub-nav-link">Modeling Wound Healing</a></li>
+                                <li><a href="rpe-morphology.html" class="sub-nav-link">Morphological Analysis</a></li>
+                                <li><a href="pinns-cancer.html" class="sub-nav-link active">Enhanced PINNs</a></li>
+                                <li><a href="acharan-sulfate.html" class="sub-nav-link">Laboratory Rearing Model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="../publications.html" class="nav-link">Publications &amp; Presentations</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Sidebar Contact -->
+            <div class="sidebar-contact">
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <a href="mailto:vanthienphan2004.work@gmail.com" onclick="copyEmail(event)" title="Click to copy email">
+                            <i class="far fa-envelope"></i>
+                            <span>vanthienphan2004.work@gmail.com</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="tel:+14703507733">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(470) 350-7733</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://github.com/vanthienphan2004" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=SaQCGggAAAAJ" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Google Scholar</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="../VanPhan_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-file-pdf"></i>
+                            <span>Curriculum Vitae</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-wrapper">
+            <div class="content-container">
+                <a href="../research.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to all research
+                </a>
+
+                <h1 class="page-title">Enhanced Physics-Informed Neural Networks for Collective Cancer Invasion</h1>
+
+                <!-- Research Metadata Table (Collaborators removed) -->
+                <table class="project-meta-table">
+                    <tbody>
+                        <tr>
+                            <td class="meta-label">Advisor</td>
+                            <td class="meta-val">Dr. Yi Jiang (Georgia State University)</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Presented At / Award</td>
+                            <td class="meta-val">
+                                &bull; <strong>Best Project Award</strong> at Summer Undergraduate Research Symposium (SURS) 2025
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Code Repository</td>
+                            <td class="meta-val">
+                                <a href="https://github.com/vanthienphan2004/Physics-Informed-Neural-Networks-for-Collective-Cancer-Invasion" target="_blank" class="text-link">
+                                    GitHub: vanthienphan2004/PINNs-Cancer-Invasion
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Abstract -->
+                <h2 class="block-title">Abstract</h2>
+                <p>
+                    Modeling collective cell migration and metastatic invasion involves complex non-linear Partial Differential Equations (PDEs) across spatial and temporal scales. Traditional numerical solvers often encounter severe discretization hurdles, mesh generation overhead, and high computational costs when fitting experimental time-lapse histology data.
+                </p>
+                <p>
+                    To resolve these challenges, we engineered a <strong>Physics-Informed Neural Networks (PINNs)</strong> architecture tailored to simulate collective cancer invasion as a data-efficient, mesh-free continuous solver. Built on <strong>PyTorch</strong>, the framework leverages automated differentiation (autograd) to directly encode governing PDE conservation laws, boundary conditions, and initial constraints into the neural objective function, drastically minimizing requirements for densely labeled training pairs.
+                </p>
+                <p>
+                    We further investigated advanced operator-learning methodologies, incorporating <strong>Tensorized Fourier Neural Operators (TFNO)</strong>, a sequence-to-sequence (Seq2seq) Physics-Informed Neural Operator (PINO) formulation, and <strong>Augmented Lagrangian Methods (ALM)</strong>. These advancements mitigate common PINN pathologies, such as gradient pathologies and optimization stiffness, ensuring stable convergence and physics-consistent parameter inference in sparse-data biomedical regimes.
+                </p>
+
+                <!-- Conference Poster -->
+                <h2 class="block-title">Conference Poster</h2>
+                <div class="poster-container">
+                    <a href="../images/pinns_poster.jpeg" target="_blank" rel="noopener noreferrer" class="poster-link" title="Click to view full-resolution poster">
+                        <img src="../images/pinns_poster.jpeg" alt="Enhanced Physics-Informed Neural Networks for Collective Cancer Invasion Poster" class="poster-img">
+                    </a>
+                    <div class="poster-toolbar">
+                        <span><i class="fas fa-trophy" style="color: #b8860b;"></i> Best Project Award Winner &bull; Click to enlarge</span>
+                        <div class="poster-toolbar-links">
+                            <a href="../images/pinns_poster.jpeg" target="_blank" rel="noopener noreferrer">Full Size Poster</a>
+                            <a href="https://github.com/vanthienphan2004/Physics-Informed-Neural-Networks-for-Collective-Cancer-Invasion" target="_blank" rel="noopener noreferrer">Code Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Links -->
+                <div class="project-btn-row">
+                    <a href="https://github.com/vanthienphan2004/Physics-Informed-Neural-Networks-for-Collective-Cancer-Invasion" class="btn-cv" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> View GitHub Repository
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

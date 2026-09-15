@@ -1,62 +1,62 @@
-# Health Informatics & Computational Medicine Portfolio
+# Health Informatics and Computational Medicine Portfolio
 
-A modern, scientific portfolio showcasing research in human-centered Health Informatics, Computational Medicine, and Biomedical Sciences.
+Academic research portfolio of Van Phan, presenting computational research in clinical informatics, machine learning, and computational biology.
 
-## 🌟 Features
+## Overview and Structure
 
-- **LaTeX-Inspired Modern Design**: Crisp, monochrome light-mode styling inspired by elegant LaTeX academic preprints.
-- **Dynamic Math Background Canvas**: An interactive, lightweight canvas drawing a particle lattice that floats slowly and connects to your cursor dynamically.
-- **Section Scroll Indicator**: A floating scroll arrow button that navigates section-by-section, automatically rotating to point up to return to the top when the end of the page is reached.
-- **Interactive Card Spotlights**: Cursor-following radial spotlight overlays on featured research project cards.
-- **Micro-Animations**: Terminal console typing simulation for the hero subtitle, viewport count-up animations for statistics (GPA, presentations), and pulsing indicators on active roles.
-- **Mobile Responsive Drawer**: Optimised mobile navigation featuring a fullscreen slide-in drawer with heavy blur filters and morphing hamburger menu.
-- **Fast Loading & Lightweight**: Pure HTML, CSS, and JS with zero framework weight.
+The website is structured around an academic researcher layout featuring clean typography, structured metadata, and responsive navigation across desktop and mobile devices.
 
-## 🧬 Research Projects Featured
+### Navigation and Pages
 
-### 1. AutoMammo — DB-ATRG Mammography
-A human-centered clinical decision support framework (DB-ATRG) combining model-driven triage and automated clinical report generation. Fine-tuned MedGemma 1.5 (4B) using QLoRA on DMID and VinDr-Mammo datasets to prioritize high-risk, urgent scans (ACR Category D) with paper In Review (doi: 10.64898/2026.07.22.26358655).
+- Profile (index.html):
+  - Biographical summary and research focus
+  - Downloadable Curriculum Vitae and LinkedIn connection link
+  - Education details: B.S. in Mathematics at Georgia State University, GPA, and coursework
+  - Research and teaching appointments: RIMMES Program, Chemistry Laboratory TA, and CASA
+  - Selected honors, awards, and national competition recognitions
 
-**Key Technologies**: Python, PyTorch, QLoRA, DB-ATRG, MedGemma 1.5, DMID, VinDr-Mammo, Triage
+- Research Overview (research.html):
+  - Research Interests & Vision: Multimodal neural network architectures, patient triage algorithms, and clinical environment simulations
+  - Research Summary: Plain-paragraph synthesis of methodologies and common themes across projects
+  - Structured project cards linking to dedicated project pages
 
-### 2. Modeling Wound Healing
-Constructed a CompuCell3D simulation utilizing Q-Potts cellular models and Monte Carlo energy evaluations to model Retinal Pigment Epithelium (RPE) healing.
+- Dedicated Research Project Pages (research/):
+  1. DB-ATRG Mammography (research/db-atrg.html): Triage and automated diagnostic report generation using fine-tuned MedGemma 1.5 (QLoRA) on DMID and VinDr-Mammo datasets. Includes interactive high-resolution conference poster and DOI link.
+  2. Time Series Classification in Stroke Rehabilitation (research/stroke-rehab.html): Supervised machine learning and deep temporal models (TCN, LSTM, 1D-CNN, InceptionTime, Transformers, TSFresh) classifying active range of motion from 28+ million kinematics sensor samples via Motus Nova robotics.
+  3. Modeling Wound Healing (research/wound-healing.html): Computational simulation of Retinal Pigment Epithelium (RPE) monolayer repair using CompuCell3D and Q-Potts cellular models. Includes SURS 2024 conference poster and GitHub repository link.
+  4. Morphological Feature Analysis of RPE Cells (research/rpe-morphology.html): Automated computer vision pipeline computing 133 cellular and texture features with a stacking ensemble classifier to identify aging biomarkers. Includes GSURC 2025 conference poster and GitHub repository link.
+  5. Enhanced PINNs for Collective Cancer Invasion (research/pinns-cancer.html): Physics-Informed Neural Networks and Tensorized Fourier Neural Operators (TFNO) solving non-linear boundary PDEs for metastatic cell invasion. Best Project Award winner at SURS 2025 with conference poster and repository link.
+  6. Laboratory Rearing Model for Acharan Sulfate (research/acharan-sulfate.html): Standardized rearing model of Lissachatina fulica, natural antimicrobial evaluation, and extraction of bioactive acharan sulfate with anticoagulant and thrombolytic assays.
 
-**Key Technologies**: Python, CompuCell3D, Q-Potts, Monte Carlo, Mechanistic Modeling
+- Publications and Presentations (publications.html):
+  - Manuscripts and Preprints (In Review) with direct links to project sub-pages and official DOIs
+  - Conference presentations and posters from SIAM MDS 2026, GSURC 2026, SURS 2025, GSURC 2025, and SURS 2024
 
-### 3. Enhanced PINNs for Cancer Invasion
-Physics-Informed Neural Networks (PINNs) and Tensorized Fourier Neural Operators (TFNO) to model collective cell invasion and solve complex boundary PDEs.
+### Responsive Design
 
-**Key Technologies**: PyTorch, Autograd, PINNs, TFNO, PDE Modeling
+- Desktop: Fixed left sidebar containing brand navigation, collapsible research submenu, and direct contact methods.
+- Mobile: Top-pinned navigation card with horizontal navigation, research dropdown, and contact links with color-coded iconography.
+- Smart Scroll: Mobile navigation automatically slides out of view when scrolling down to provide full-screen reading space, and glides back into view when scrolling up for immediate navigation access.
 
-### 4. Morphological Feature Analysis (RPE)
-An automated pipeline extracting 133 shape/texture features classified using a stacked ensemble (XGBoost, LightGBM, CatBoost) to identify aging biomarkers in RPE cells.
+## Technical Implementation
 
-**Key Technologies**: OpenCV, Scikit-learn, XGBoost, LightGBM, CatBoost
+- Markup: Semantic HTML5, fully accessible heading hierarchy, and meta descriptions.
+- Styling: Custom CSS3 design system using Merriweather serif headings, Inter body typography, CSS Grid, Flexbox, and fluid responsive media queries.
+- Scripting: Vanilla JavaScript implementing mobile scroll detection (requestAnimationFrame throttled), dynamic content offset calculation, collapsible submenus, and clipboard utility.
+- Assets: Local high-resolution conference posters and profile photography located in the images/ directory.
 
-### 5. Laboratory Rearing Model of Lissachatina fulica for Acharan Sulfate Extraction & Evaluation
-Established a laboratory rearing model of *Lissachatina fulica* using garlic essential oil and *Lactobacillus casei* for 100% inhibition of pathogenic bacteria, extracting acharan sulfate with 89.40% anticoagulant and 32.09% thrombolytic activity.
+## Local Development
 
-**Key Technologies**: Gravimetric Analysis, Clotting Time Assay, Clot Lysis Assay, Biomedical Science
+To view the website locally, open index.html in any modern web browser or start a local HTTP server:
 
-## 🎨 Layout Sections (DOM Order)
+```bash
+# Using Python 3
+python3 -m http.server 8000
+```
 
-- **Hero / Overview**: Terminal typing greeting, research summary, and animated academic statistics counters.
-- **Research / Projects**: Featured research cards with interactive mouse-glow features.
-- **Academic Timeline**: Academic achievements and research experience, including relevant coursework:
-  * Linear Algebra, Differential Equations, Numerical Analysis, Analysis, Modern Algebra, Optimization, Calculus, Biostatistics, Probability & Statistics, Applied Combinatorics, Computer Science.
-- **Technical Stack**: AI/Machine Learning, Scientific & Math Modeling, and Programming skill pills.
-- **Contact / Footer**: Social links with a click-to-copy email toast notification.
+Then navigate to http://localhost:8000 in your browser.
 
-## 🚀 Deployment
+## Deployment
 
-This site is optimized for GitHub Pages deployment:
-
-1. Create repository: `vanthienphan2004.github.io`
-2. Push these files to the repository (local task logs in `tasks/` are ignored in `.gitignore`)
-3. Enable GitHub Pages in repository settings
-4. Site will be live at: `https://vanthienphan2004.github.io`
-
----
-
-**Built with scientific curiosity and computational passion** 🔬⚡
+Configured for static hosting on GitHub Pages:
+- Repository: https://github.com/vanthienphan2004/vanthienphan2004.github.io

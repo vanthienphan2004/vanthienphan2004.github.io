@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Publications, Manuscripts, and Conference Presentations by Van Phan — Health Informatics and Computational Medicine.">
+    <title>Publications &amp; Presentations | Van Phan</title>
+
+    <!-- Font Awesome & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <a href="index.html" class="mobile-title">Home</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <a href="index.html" class="sidebar-brand">
+                    <div class="sidebar-title">Home</div>
+                </a>
+
+                <nav class="sidebar-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="index.html" class="nav-link">Profile</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="research.html" class="nav-link">Research</a>
+                                <button type="button" class="dropdown-toggle-btn" aria-label="Toggle Research Menu">
+                                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                                </button>
+                            </div>
+                            <ul class="sub-nav-list">
+                                <li><a href="research/db-atrg.html" class="sub-nav-link">DB-ATRG Mammography</a></li>
+                                <li><a href="research/stroke-rehab.html" class="sub-nav-link">Time Series Classification</a></li>
+                                <li><a href="research/wound-healing.html" class="sub-nav-link">Modeling Wound Healing</a></li>
+                                <li><a href="research/rpe-morphology.html" class="sub-nav-link">Morphological Analysis</a></li>
+                                <li><a href="research/pinns-cancer.html" class="sub-nav-link">Enhanced PINNs</a></li>
+                                <li><a href="research/acharan-sulfate.html" class="sub-nav-link">Laboratory Rearing Model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="publications.html" class="nav-link active">Publications &amp; Presentations</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Sidebar Contact -->
+            <div class="sidebar-contact">
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <a href="mailto:vanthienphan2004.work@gmail.com" onclick="copyEmail(event)" title="Click to copy email">
+                            <i class="far fa-envelope"></i>
+                            <span>vanthienphan2004.work@gmail.com</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="tel:+14703507733">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(470) 350-7733</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://github.com/vanthienphan2004" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=SaQCGggAAAAJ" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Google Scholar</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="VanPhan_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-file-pdf"></i>
+                            <span>Curriculum Vitae</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-wrapper">
+            <div class="content-container">
+                <h1 class="page-title">Publications &amp; Presentations</h1>
+
+                <!-- Manuscripts Section -->
+                <section class="publications-section">
+                    <h2 class="block-title">Manuscripts &amp; Preprints</h2>
+
+                    <!-- Manuscript 1 -->
+                    <article class="publication-entry">
+                        <div class="pub-title">
+                            <span class="pub-status-badge">In Review</span>
+                            DB-ATRG: The Density and BI-RADS-Aware Triage and Automatic Report Generation System for Mammography
+                        </div>
+                        <div class="pub-meta">
+                            <strong>Van Phan</strong>, et al. (Advisor: Dr. Russell Jeter) &bull; 2026
+                        </div>
+                        <p style="font-size: 0.92rem; margin-bottom: 0.5rem;">
+                            Introduces the DB-ATRG framework using QLoRA fine-tuned MedGemma 1.5 to generate diagnostic reports and prioritize high-risk malignancies within the first 20% of clinical workload.
+                        </p>
+                        <div class="pub-links">
+                            <a href="research/db-atrg.html" class="text-link">
+                                <i class="fas fa-file-alt"></i> Research Project Page
+                            </a>
+                            <a href="https://doi.org/10.64898/2026.07.22.26358655" target="_blank" class="text-link" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> doi: 10.64898/2026.07.22.26358655
+                            </a>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Conference Posters & Presentations Section -->
+                <section class="presentations-section" style="margin-top: 2rem;">
+                    <h2 class="block-title">Conference Presentations &amp; Posters</h2>
+
+                    <!-- Presentation 1 -->
+                    <article class="publication-entry">
+                        <div class="pub-title">
+                            Accelerating Breast Cancer Diagnosis: AI-Driven Triage and Prioritization in Mammography
+                        </div>
+                        <div class="pub-meta">
+                            <strong>2026 SIAM Conference on Mathematics of Data Science (MDS26)</strong> &bull; Poster Presentation
+                        </div>
+                        <p style="font-size: 0.92rem; margin-bottom: 0.5rem;">
+                            Showcased the mathematical formulation of the Cumulative Urgency Score for mammography triage and clinical workload acceleration.
+                        </p>
+                        <div class="pub-links">
+                            <a href="research/db-atrg.html" class="text-link">
+                                <i class="fas fa-file-alt"></i> Project Page
+                            </a>
+                            <a href="https://doi.org/10.64898/2026.07.22.26358655" target="_blank" class="text-link" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Preprint DOI
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Presentation 2 -->
+                    <article class="publication-entry">
+                        <div class="pub-title">
+                            Density and BI-RADS - Aware Triage and Automatic Report Generation System for Mammography
+                        </div>
+                        <div class="pub-meta">
+                            <strong>Georgia State Undergraduate Research Conference (GSURC), 2026</strong> &bull; Poster Presentation
+                        </div>
+                        <p style="font-size: 0.92rem; margin-bottom: 0.5rem;">
+                            Presented automated report generation and density-aware triage results evaluated on the DMID and VinDr-Mammo datasets.
+                        </p>
+                        <div class="pub-links">
+                            <a href="research/db-atrg.html" class="text-link">
+                                <i class="fas fa-file-alt"></i> Project Page
+                            </a>
+                            <a href="https://doi.org/10.64898/2026.07.22.26358655" target="_blank" class="text-link" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Preprint DOI
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Presentation 3: Modeling Wound Healing (Research #3) -->
+                    <article class="publication-entry">
+                        <div class="pub-title">
+                            Modeling Wound Healing Without Migration and Proliferation
+                        </div>
+                        <div class="pub-meta">
+                            <strong>Summer Undergraduate Research Symposium (SURS), 2024</strong> &bull; Poster Presentation
+                        </div>
+                        <p style="font-size: 0.92rem; margin-bottom: 0.5rem;">
+                            Presented CompuCell3D Q-Potts modeling of purse-string and cell-fusion mechanisms during epithelial sheet wound closure.
+                        </p>
+                        <div class="pub-links">
+                            <a href="research/wound-healing.html" class="text-link">
+                                <i class="fas fa-file-alt"></i> Project Page
+                            </a>
+                            <a href="https://github.com/vanthienphan2004/Modeling-Wound-Healing-Without-Migration-and-Proliferation" target="_blank" class="text-link" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub Repository
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Presentation 4: Morphological Feature Analysis (Research #4) -->
+                    <article class="publication-entry">
+                        <div class="pub-title">
+                            Morphological Feature Analysis of Retinal Pigment Epithelial Cell from Mice during Aging
+                        </div>
+                        <div class="pub-meta">
+                            <strong>Georgia State Undergraduate Research Conference (GSURC), 2025</strong> &bull; Poster Presentation
+                        </div>
+                        <p style="font-size: 0.92rem; margin-bottom: 0.5rem;">
+                            Reported on 133 morphological and texture feature extractions from 326 RPE cell images using a 90%+ F1 stacking ensemble.
+                        </p>
+                        <div class="pub-links">
+                            <a href="research/rpe-morphology.html" class="text-link">
+                                <i class="fas fa-file-alt"></i> Project Page
+                            </a>
+                            <a href="https://github.com/vanthienphan2004/Morphological-Feature-Analysis-of-Retinal-Pigment-Epithelial-Cells-from-C57BL-6J-Mice-During-Aging" target="_blank" class="text-link" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub Repository
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Presentation 5: Enhanced PINNs (Research #5) -->
+                    <article class="publication-entry">
+                        <div class="pub-title">
+                            Enhanced Physics-Informed Neural Networks for Collective Cancer Invasion
+                        </div>
+                        <div class="pub-meta">
+                            <strong>Summer Undergraduate Research Symposium (SURS), 2025</strong> &bull; <span style="color: #936800; font-weight: 700;"><i class="fas fa-award"></i> Best Project Award</span>
+                        </div>
+                        <p style="font-size: 0.92rem; margin-bottom: 0.5rem;">
+                            Demonstrated continuous mesh-free PDE solutions using PyTorch autograd, TFNO, and Augmented Lagrangian Methods for cancer invasion dynamics.
+                        </p>
+                        <div class="pub-links">
+                            <a href="research/pinns-cancer.html" class="text-link">
+                                <i class="fas fa-file-alt"></i> Project Page
+                            </a>
+                            <a href="https://github.com/vanthienphan2004/Physics-Informed-Neural-Networks-for-Collective-Cancer-Invasion" target="_blank" class="text-link" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub Repository
+                            </a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Time Series Classification of Active Range of Motion in Robotics-Assisted Stroke Rehabilitation — Van Phan.">
+    <title>Time Series Classification in Stroke Rehabilitation | Van Phan</title>
+
+    <!-- Font Awesome & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <a href="../index.html" class="mobile-title">Home</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <a href="../index.html" class="sidebar-brand">
+                    <div class="sidebar-title">Home</div>
+                </a>
+
+                <nav class="sidebar-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="../index.html" class="nav-link">Profile</a>
+                            </div>
+                        </li>
+                        <li class="nav-item has-active">
+                            <div class="nav-link-row">
+                                <a href="../research.html" class="nav-link">Research</a>
+                                <button type="button" class="dropdown-toggle-btn" aria-label="Toggle Research Menu">
+                                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                                </button>
+                            </div>
+                            <ul class="sub-nav-list">
+                                <li><a href="db-atrg.html" class="sub-nav-link">DB-ATRG Mammography</a></li>
+                                <li><a href="stroke-rehab.html" class="sub-nav-link active">Time Series Classification</a></li>
+                                <li><a href="wound-healing.html" class="sub-nav-link">Modeling Wound Healing</a></li>
+                                <li><a href="rpe-morphology.html" class="sub-nav-link">Morphological Analysis</a></li>
+                                <li><a href="pinns-cancer.html" class="sub-nav-link">Enhanced PINNs</a></li>
+                                <li><a href="acharan-sulfate.html" class="sub-nav-link">Laboratory Rearing Model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="../publications.html" class="nav-link">Publications &amp; Presentations</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Sidebar Contact -->
+            <div class="sidebar-contact">
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <a href="mailto:vanthienphan2004.work@gmail.com" onclick="copyEmail(event)" title="Click to copy email">
+                            <i class="far fa-envelope"></i>
+                            <span>vanthienphan2004.work@gmail.com</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="tel:+14703507733">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(470) 350-7733</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://github.com/vanthienphan2004" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=SaQCGggAAAAJ" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Google Scholar</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="../VanPhan_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-file-pdf"></i>
+                            <span>Curriculum Vitae</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-wrapper">
+            <div class="content-container">
+                <a href="../research.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to all research
+                </a>
+
+                <h1 class="page-title">Time Series Classification of Active Range of Motion in Robotics-Assisted Stroke Rehabilitation</h1>
+
+                <!-- Research Metadata Table -->
+                <table class="project-meta-table">
+                    <tbody>
+                        <tr>
+                            <td class="meta-label">Advisor</td>
+                            <td class="meta-val">Dr. Russell Jeter (Georgia State University)</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Affiliation</td>
+                            <td class="meta-val">Research Initiation Major / Minor Experience in STEM (RIMMES) Program</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Core Technologies</td>
+                            <td class="meta-val">
+                                Motus Nova Robotics, Kinematic Time-Series, TSFresh, Temporal Convolutional Networks (TCN), LSTM, 1D-CNN, InceptionTime, Transformers, XGBoost
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Abstract -->
+                <h2 class="block-title">Abstract</h2>
+                <p>
+                    <strong>Background:</strong> Stroke therapy is essential to reduce impairments and improve motor movements. This project builds upon previous work that classified stroke residual severity using session-level summary statistics from robotics-assisted rehabilitation. Here, we advance this approach by leveraging high-resolution, raw time-series kinematics data collected during in-home therapy sessions to classify specific movement patterns.
+                </p>
+                <p>
+                    <strong>Objective:</strong> Our main objective is to use raw angle and pressure data from Motus Nova robotics rehabilitation technology to develop supervised machine learning models. We aim to autonomously classify the active range of motion (ROM) of users undergoing stroke rehabilitation.
+                </p>
+                <p>
+                    <strong>Methods:</strong> The dataset consists of over 28 million overlapping 30-second samples (at 1 Hz) from 431 unique users, derived from Angle and Pressure sensor channels. The target variable is active ROM, discretized into 10 classes. We evaluated several machine learning architectures, including classical approaches (XGBoost), deep temporal models (LSTM, 1D-CNN, Transformer, InceptionTime, Temporal Convolutional Networks), and automated feature engineering using TSFresh (TSFresh-RF, TSFresh-XGB, TSFresh-DFFNN).
+                </p>
+                <p>
+                    <strong>Results:</strong> Across eleven architectures scored on an identical 100,000-window evaluation subsample, the Temporal Convolutional Network attained the highest overall accuracy (43.2%), while the recurrent LSTM retained the strongest class-wise discrimination (balanced accuracy 0.201, AUROC 0.670) despite significant class imbalance. TSFresh embeddings built from the minimal feature set produced the lowest Mean Absolute Error (1.58 bins) but did not reproduce the top-line accuracy advantage we previously observed with the comprehensive feature set.
+                </p>
+                <p>
+                    <strong>Conclusions:</strong> We demonstrated that objectively measured, high-resolution time series data combined with advanced machine learning methods can be used to classify active range of motion. While models relying on TSFresh features showed the highest accuracy, addressing the underlying class imbalance remains a critical area for future study to enhance individualized stroke rehabilitation.
+                </p>
+
+                <!-- Action Links -->
+                <div class="project-btn-row" style="margin-top: 2rem;">
+                    <a href="../research.html" class="btn-cv">
+                        <i class="fas fa-arrow-left"></i> Return to Research Overview
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Research Projects and Interests of Van Phan — Health Informatics, Computational Medicine, and Biomedical Sciences.">
+    <title>Research | Van Phan</title>
+
+    <!-- Font Awesome & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <a href="index.html" class="mobile-title">Home</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <a href="index.html" class="sidebar-brand">
+                    <div class="sidebar-title">Home</div>
+                </a>
+
+                <nav class="sidebar-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="index.html" class="nav-link">Profile</a>
+                            </div>
+                        </li>
+                        <li class="nav-item has-active">
+                            <div class="nav-link-row">
+                                <a href="research.html" class="nav-link active">Research</a>
+                                <button type="button" class="dropdown-toggle-btn" aria-label="Toggle Research Menu">
+                                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                                </button>
+                            </div>
+                            <ul class="sub-nav-list">
+                                <li><a href="research/db-atrg.html" class="sub-nav-link">DB-ATRG Mammography</a></li>
+                                <li><a href="research/stroke-rehab.html" class="sub-nav-link">Time Series Classification</a></li>
+                                <li><a href="research/wound-healing.html" class="sub-nav-link">Modeling Wound Healing</a></li>
+                                <li><a href="research/rpe-morphology.html" class="sub-nav-link">Morphological Analysis</a></li>
+                                <li><a href="research/pinns-cancer.html" class="sub-nav-link">Enhanced PINNs</a></li>
+                                <li><a href="research/acharan-sulfate.html" class="sub-nav-link">Laboratory Rearing Model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="publications.html" class="nav-link">Publications &amp; Presentations</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Sidebar Contact -->
+            <div class="sidebar-contact">
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <a href="mailto:vanthienphan2004.work@gmail.com" onclick="copyEmail(event)"
+                            title="Click to copy email">
+                            <i class="far fa-envelope"></i>
+                            <span>vanthienphan2004.work@gmail.com</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="tel:+14703507733">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(470) 350-7733</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://github.com/vanthienphan2004" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=SaQCGggAAAAJ"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Google Scholar</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="VanPhan_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-file-pdf"></i>
+                            <span>Curriculum Vitae</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-wrapper">
+            <div class="content-container">
+                <h1 class="page-title">Research</h1>
+
+                <!-- Research Interests Box -->
+                <section class="research-interests-box">
+                    <h3 class="item-title" style="font-size: 1.15rem; margin-bottom: 0.6rem;">Research Interests &amp;
+                        Vision</h3>
+                    <p
+                        style="font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.2rem; color: var(--text-secondary);">
+                        As clinical AI models and agents rapidly advance within healthcare, bridging the gap between raw
+                        computational predictions and actual clinical workflows remains a central challenge in modern
+                        medicine. Building upon five years of continuous interdisciplinary research — transitioning from
+                        wet-lab experimental design to data-driven clinical AI development — my work focuses on
+                        designing reliable, simulated, and human-centered medical informatics systems that support
+                        clinicians in diagnosis and improve patient outcomes.
+                    </p>
+
+                    <h3 class="item-title" style="font-size: 1.15rem; margin-bottom: 0.6rem;">Research Summary</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.65; margin-bottom: 0; color: var(--text-secondary);">
+                        My work centers on developing multimodal neural network architectures, risk-aware clinical
+                        triage algorithms, and physics-informed computational models that bridge medical imaging,
+                        clinical informatics, and cellular biomechanics. The common thread is translating complex
+                        biomedical data and biological mechanisms into rigorous, interpretable computational tools and
+                        decision-support systems that enhance clinical efficiency and patient care.
+                    </p>
+                </section>
+
+                <h2 class="block-title" style="margin-top: 1rem;">Research Projects</h2>
+
+                <!-- Project List (Cards Linking to Individual Pages) -->
+                <div class="projects-container">
+
+                    <!-- 1. DB-ATRG Mammography -->
+                    <a href="research/db-atrg.html" class="project-card-link">
+                        <article class="research-card">
+                            <div class="research-card-header">
+                                <h3 class="research-card-title">DB-ATRG: Density and BI-RADS-Aware Triage and Automatic
+                                    Report Generation for Mammography</h3>
+                                <i class="fas fa-arrow-right" style="color: var(--text-muted); font-size: 0.95rem;"></i>
+                            </div>
+                            <div class="research-card-meta">
+                                <strong>Advisor:</strong> Dr. Russell Jeter &bull; <strong>Affiliation:</strong> RIMMES
+                                Program
+                            </div>
+                            <p>
+                                A human-centered clinical decision support framework (DB-ATRG) combining model-driven
+                                triage and automated report generation. Fine-tuned MedGemma 1.5 (4B) using QLoRA on DMID
+                                and VinDr-Mammo datasets, capturing 100% of high-risk malignancies within the first 20%
+                                of reading workload.
+                            </p>
+                            <div class="tag-row">
+                                <span class="tag-pill">DB-ATRG</span>
+                                <span class="tag-pill">QLoRA</span>
+                                <span class="tag-pill">MedGemma 1.5</span>
+                                <span class="tag-pill">Clinical Decision Support</span>
+                                <span class="tag-pill">SIAM 2026</span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <!-- 2. Time Series Classification in Stroke Rehabilitation -->
+                    <a href="research/stroke-rehab.html" class="project-card-link">
+                        <article class="research-card">
+                            <div class="research-card-header">
+                                <h3 class="research-card-title">Time Series Classification of Active Range of Motion in Robotics-Assisted Stroke Rehabilitation</h3>
+                                <i class="fas fa-arrow-right" style="color: var(--text-muted); font-size: 0.95rem;"></i>
+                            </div>
+                            <div class="research-card-meta">
+                                <strong>Advisor:</strong> Dr. Russell Jeter &bull; <strong>Affiliation:</strong> RIMMES Program
+                            </div>
+                            <p>
+                                Supervised deep temporal learning and feature engineering framework (TCN, LSTM, 1D-CNN, InceptionTime, Transformers, TSFresh) analyzing 28+ million raw sensor kinematic windows from Motus Nova rehabilitation robotics to classify 10 active range of motion levels in stroke patients.
+                            </p>
+                            <div class="tag-row">
+                                <span class="tag-pill">Kinematics Time-Series</span>
+                                <span class="tag-pill">Motus Nova Robotics</span>
+                                <span class="tag-pill">TCN &amp; LSTM</span>
+                                <span class="tag-pill">TSFresh</span>
+                                <span class="tag-pill">Stroke Rehabilitation</span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <!-- 3. Modeling Wound Healing -->
+                    <a href="research/wound-healing.html" class="project-card-link">
+                        <article class="research-card">
+                            <div class="research-card-header">
+                                <h3 class="research-card-title">Modeling Wound Healing Without Migration and Proliferation</h3>
+                                <i class="fas fa-arrow-right" style="color: var(--text-muted); font-size: 0.95rem;"></i>
+                            </div>
+                            <div class="research-card-meta">
+                                <strong>Advisor:</strong> Dr. Yi Jiang &bull; <strong>Affiliation:</strong> Center for the Advancement of Students &amp; Alumni
+                            </div>
+                            <p>
+                                A computational medicine framework simulating Retinal Pigment Epithelium (RPE) wound healing to explore therapeutics for Age-related Macular Degeneration (AMD). Simulated cellular purse-string contraction and cell fusion repair mechanisms in CompuCell3D via Q-Potts models.
+                            </p>
+                            <div class="tag-row">
+                                <span class="tag-pill">CompuCell3D</span>
+                                <span class="tag-pill">Q-Potts Model</span>
+                                <span class="tag-pill">Monte Carlo</span>
+                                <span class="tag-pill">AMD Therapeutics</span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <!-- 4. RPE Cell Morphology -->
+                    <a href="research/rpe-morphology.html" class="project-card-link">
+                        <article class="research-card">
+                            <div class="research-card-header">
+                                <h3 class="research-card-title">Morphological Feature Analysis of Retinal Pigment Epithelial Cells During Aging</h3>
+                                <i class="fas fa-arrow-right" style="color: var(--text-muted); font-size: 0.95rem;"></i>
+                            </div>
+                            <div class="research-card-meta">
+                                <strong>Advisor:</strong> Dr. Yi Jiang &bull; <strong>Affiliation:</strong> Center for the Advancement of Students &amp; Alumni
+                            </div>
+                            <p>
+                                An automated biomedical imaging pipeline extracting 133 morphological and texture features from 326 RPE cell images to identify aging biomarkers, achieving a 90%+ cross-validation F1-score with a stacking ensemble (XGBoost, LightGBM, CatBoost).
+                            </p>
+                            <div class="tag-row">
+                                <span class="tag-pill">Biomarker Discovery</span>
+                                <span class="tag-pill">Feature Engineering</span>
+                                <span class="tag-pill">Stacking Ensemble</span>
+                                <span class="tag-pill">OpenCV</span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <!-- 5. PINNs Cancer Invasion -->
+                    <a href="research/pinns-cancer.html" class="project-card-link">
+                        <article class="research-card">
+                            <div class="research-card-header">
+                                <h3 class="research-card-title">Enhanced PINNs for Collective Cancer Invasion</h3>
+                                <i class="fas fa-arrow-right" style="color: var(--text-muted); font-size: 0.95rem;"></i>
+                            </div>
+                            <div class="research-card-meta">
+                                <strong>Advisor:</strong> Dr. Yi Jiang &bull; <strong>Affiliation:</strong> Center for the Advancement of Students &amp; Alumni
+                            </div>
+                            <p>
+                                Engineered a Physics-Informed Neural Networks (PINNs) model to simulate collective cancer invasion, resulting in a data-efficient, mesh-free solution for complex Partial Differential Equations (PDEs) utilizing Tensorized Fourier Neural Operators (TFNO).
+                            </p>
+                            <div class="tag-row">
+                                <span class="tag-pill">PINNs</span>
+                                <span class="tag-pill">TFNO</span>
+                                <span class="tag-pill">PyTorch Autograd</span>
+                                <span class="tag-pill">Best Project Award (SURS 2025)</span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <!-- 6. Acharan Sulfate Studies -->
+                    <a href="research/acharan-sulfate.html" class="project-card-link">
+                        <article class="research-card">
+                            <div class="research-card-header">
+                                <h3 class="research-card-title">Laboratory Rearing Model of Lissachatina fulica for Acharan Sulfate Extraction &amp; Evaluation</h3>
+                                <i class="fas fa-arrow-right" style="color: var(--text-muted); font-size: 0.95rem;"></i>
+                            </div>
+                            <div class="research-card-meta">
+                                <strong>Topic:</strong> Natural Product Antimicrobial &amp; Anticoagulant Assay
+                            </div>
+                            <p>
+                                Established a laboratory rearing model of <em>Lissachatina fulica</em> using natural agents for 100% inhibition of pathogenic bacteria. Extracted acharan sulfate and demonstrated 89.40% anticoagulant activity and 32.09% thrombolytic activity.
+                            </p>
+                            <div class="tag-row">
+                                <span class="tag-pill">Biomedical Sciences</span>
+                                <span class="tag-pill">Gravimetric Analysis</span>
+                                <span class="tag-pill">Clotting Assay</span>
+                                <span class="tag-pill">Natural Products</span>
+                            </div>
+                        </article>
+                    </a>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
