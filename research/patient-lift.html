@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Development of a Miniaturized Patient Lift System Using 3D Printing and Stepper Motor Control — Van Phan.">
+    <title>Miniaturized Patient Lift System | Van Phan</title>
+
+    <!-- Font Awesome & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <a href="../index.html" class="mobile-title">Home</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <a href="../index.html" class="sidebar-brand">
+                    <div class="sidebar-title">Home</div>
+                </a>
+
+                <nav class="sidebar-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="../index.html" class="nav-link">Profile</a>
+                            </div>
+                        </li>
+                        <li class="nav-item has-active">
+                            <div class="nav-link-row">
+                                <a href="../research.html" class="nav-link">Research</a>
+                                <button type="button" class="dropdown-toggle-btn" aria-label="Toggle Research Menu">
+                                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                                </button>
+                            </div>
+                            <ul class="sub-nav-list">
+                                <li><a href="db-atrg.html" class="sub-nav-link">DB-ATRG Mammography</a></li>
+                                <!-- <li><a href="stroke-rehab.html" class="sub-nav-link">Time Series Classification</a></li> -->
+                                <li><a href="wound-healing.html" class="sub-nav-link">Modeling Wound Healing</a></li>
+                                <li><a href="rpe-morphology.html" class="sub-nav-link">Morphological Analysis</a></li>
+                                <li><a href="pinns-cancer.html" class="sub-nav-link">Enhanced PINNs</a></li>
+                                <li><a href="acharan-sulfate.html" class="sub-nav-link">Laboratory Rearing Model</a></li>
+                                <li><a href="patient-lift.html" class="sub-nav-link active">Patient Lift System</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="../publications.html" class="nav-link">Publications &amp; Presentations</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Sidebar Contact -->
+            <div class="sidebar-contact">
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <a href="mailto:vanthienphan2004.work@gmail.com" onclick="copyEmail(event)"
+                            title="Click to copy email">
+                            <i class="far fa-envelope"></i>
+                            <span>vanthienphan2004.work@gmail.com</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="tel:+14703507733">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(470) 350-7733</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://github.com/vanthienphan2004" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=SaQCGggAAAAJ"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Google Scholar</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="../VanPhan_CV.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-file-pdf"></i>
+                            <span>Curriculum Vitae</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-wrapper">
+            <div class="content-container">
+                <a href="../research.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to all research
+                </a>
+
+                <h1 class="page-title">Development of a Miniaturized Patient Lift System Using 3D Printing and Stepper Motor Control</h1>
+
+                <!-- Research Metadata Table (No collaborators) -->
+                <table class="project-meta-table">
+                    <tbody>
+                        <tr>
+                            <td class="meta-label">Advisor</td>
+                            <td class="meta-val">Dr. Tin Tran</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Presentation</td>
+                            <td class="meta-val">Engineering and Science Fair of Ho Chi Minh City University of Technology (2022)</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Award</td>
+                            <td class="meta-val">Consolation Prize at Engineering and Science Fair of HCMUT (2022)</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Research Focus</td>
+                            <td class="meta-val">Biomedical Robotics &amp; Assistive Devices</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Hardware &amp; Platform</td>
+                            <td class="meta-val">3D Printing, Arduino Uno REV3 ICSP Microcontroller, Arduino A4988 Stepper Motor Driver</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Abstract / Overview -->
+                <h2 class="block-title">Abstract</h2>
+                <p>
+                    Safe patient transfer in medical facilities and in-home care environments is critical for preventing fall-related injuries and reducing musculoskeletal strain among healthcare workers and caregivers. However, traditional mechanical and hydraulic patient lift systems are often excessively bulky, costly, and difficult to deploy in space-constrained settings.
+                </p>
+                <p>
+                    In this project, we designed and built a functional, miniaturized patient lift machine using additive manufacturing (3D printing) combined with precision electromechanical actuation. The system is powered by an Arduino Uno REV3 ICSP microcontroller board paired with an Arduino A4988 stepper motor driver, enabling high-torque, stable vertical lifting and horizontal movement control.
+                </p>
+                <p>
+                    Experimental testing demonstrated enhanced lifting and moving capabilities compared to conventional designs while simultaneously achieving a significant reduction in overall equipment size and weight. The project was presented at the Engineering and Science Fair of Ho Chi Minh City University of Technology (2022) and recognized with the Consolation Prize.
+                </p>
+
+                <!-- Project Highlights Box -->
+                <h2 class="block-title">Key Contributions</h2>
+                <ul class="academic-list">
+                    <li>Developed a miniaturized prototype of an assistive patient lift machine using rapid 3D printing prototyping, Arduino A4988 Stepper Motor, and an Arduino Uno REV3 ICSP microcontroller board.</li>
+                    <li>Enhanced mechanical lifting and moving capabilities as compared to existing models, while simultaneously reducing the device volume and footprint.</li>
+                    <li>Awarded the <strong>Consolation Prize</strong> at the Engineering and Science Fair of Ho Chi Minh City University of Technology (2022).</li>
+                </ul>
+
+                <!-- Action Links -->
+                <div class="project-btn-row" style="margin-top: 2rem;">
+                    <a href="../research.html" class="btn-cv">
+                        <i class="fas fa-arrow-left"></i> Return to Research Overview
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

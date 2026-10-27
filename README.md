@@ -26,11 +26,12 @@ The website is structured around an academic researcher layout featuring clean t
   3. Modeling Wound Healing (research/wound-healing.html): Computational simulation of Retinal Pigment Epithelium (RPE) monolayer repair using CompuCell3D and Q-Potts cellular models. Includes SURS 2024 conference poster and GitHub repository link.
   4. Morphological Feature Analysis of RPE Cells (research/rpe-morphology.html): Automated computer vision pipeline computing 133 cellular and texture features with a stacking ensemble classifier to identify aging biomarkers. Includes GSURC 2025 conference poster and GitHub repository link.
   5. Enhanced PINNs for Collective Cancer Invasion (research/pinns-cancer.html): Physics-Informed Neural Networks and Tensorized Fourier Neural Operators (TFNO) solving non-linear boundary PDEs for metastatic cell invasion. Best Project Award winner at SURS 2025 with conference poster and repository link.
-  6. Laboratory Rearing Model for Acharan Sulfate (research/acharan-sulfate.html): Standardized rearing model of Lissachatina fulica, natural antimicrobial evaluation, and extraction of bioactive acharan sulfate with anticoagulant and thrombolytic assays.
+  6. Laboratory Rearing Model for Acharan Sulfate (research/acharan-sulfate.html): Standardized rearing model of Lissachatina fulica, natural antimicrobial evaluation, and extraction of bioactive acharan sulfate with anticoagulant and thrombolytic assays. Advisor: Dr. Phu Duc Nguyen; presented at ViSEF 2022 (Prospect Award & First Place).
+  7. Miniaturized Patient Lift System (research/patient-lift.html): Rapid 3D printing prototyping and stepper motor electromechanical actuation (Arduino REV3 ICSP, A4988 driver) for space-efficient patient transfers. Advisor: Dr. Tin Tran; presented at HCMUT Engineering and Science Fair 2022 (Consolation Prize).
 
 - Publications and Presentations (publications.html):
   - Manuscripts and Preprints (In Review) with direct links to project sub-pages and official DOIs
-  - Conference presentations and posters from SIAM MDS 2026, GSURC 2026, SURS 2025, GSURC 2025, and SURS 2024
+  - Conference presentations and posters from SIAM MDS 2026, GSURC 2026, SURS 2025, GSURC 2025, SURS 2024, ViSEF 2022, and HCMUT Fair 2022
 
 ### Responsive Design
 
