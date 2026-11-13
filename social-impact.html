@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Community & Social Impact by Van Phan — Data Science for Eldercare Operations and Weekly Senior Community Center Photography at Viet Home Care.">
+    <title>Community &amp; Social Impact | Van Phan</title>
+
+    <!-- Font Awesome & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <a href="index.html" class="mobile-title">Home</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <a href="index.html" class="sidebar-brand">
+                    <div class="sidebar-title">Home</div>
+                </a>
+
+                <nav class="sidebar-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="index.html" class="nav-link">Profile</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="research.html" class="nav-link">Research</a>
+                                <button type="button" class="dropdown-toggle-btn" aria-label="Toggle Research Menu">
+                                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                                </button>
+                            </div>
+                            <ul class="sub-nav-list">
+                                <li><a href="research/db-atrg.html" class="sub-nav-link">DB-ATRG Mammography</a></li>
+                                <li><a href="research/stroke-rehab.html" class="sub-nav-link">Time Series Classification</a></li>
+                                <li><a href="research/wound-healing.html" class="sub-nav-link">Modeling Wound
+                                        Healing</a></li>
+                                <li><a href="research/rpe-morphology.html" class="sub-nav-link">Morphological
+                                        Analysis</a></li>
+                                <li><a href="research/pinns-cancer.html" class="sub-nav-link">Enhanced PINNs</a></li>
+                                <li><a href="research/acharan-sulfate.html" class="sub-nav-link">Laboratory Rearing
+                                        Model</a></li>
+                                <li><a href="research/patient-lift.html" class="sub-nav-link">Patient Lift System</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="publications.html" class="nav-link">Publications &amp; Presentations</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link-row">
+                                <a href="social-impact.html" class="nav-link active">Community &amp; Social Impact</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Sidebar Contact -->
+            <div class="sidebar-contact">
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <a href="mailto:vanthienphan2004.work@gmail.com" onclick="copyEmail(event)"
+                            title="Click to copy email">
+                            <i class="far fa-envelope"></i>
+                            <span>vanthienphan2004.work@gmail.com</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="tel:+14703507733">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(470) 350-7733</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://www.linkedin.com/in/van-phan-241770242/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://github.com/vanthienphan2004" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=SaQCGggAAAAJ"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Google Scholar</span>
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a href="VanPhan_CV.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-file-pdf"></i>
+                            <span>Curriculum Vitae</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-wrapper">
+            <div class="content-container">
+                <h1 class="page-title">Community &amp; Social Impact</h1>
+
+                <!-- Philosophy Overview Box -->
+                <div class="research-interests-box">
+                    <h3 class="item-title">Human-Centered Healthcare: From Clinical Algorithms to Community Connection</h3>
+                    <p style="margin-bottom: 0;">
+                        At <strong>Viet Home Care LLC</strong>—an organization providing clinical and personal care for elderly patients across more than 1,000 households in Georgia—my work bridges two essential sides of eldercare: building machine learning and vision-language pipelines to streamline daily care operations, and spending time on the ground with seniors as a photographer for the Weekly Senior Community Center.
+                    </p>
+                </div>
+
+                <!-- Organization & Role Metadata -->
+                <table class="project-meta-table">
+                    <tbody>
+                        <tr>
+                            <td class="meta-label">Organization</td>
+                            <td class="meta-val"><strong>Viet Home Care LLC</strong> (Atlanta, GA)</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Roles</td>
+                            <td class="meta-val">Data Science Intern &amp; Weekly Senior Community Center Photographer</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Timeline</td>
+                            <td class="meta-val">Jun. 2024 – Sep. 2026</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Community Reach</td>
+                            <td class="meta-val">1,000+ Elderly Households &amp; Weekly Senior Community Gatherings</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Section 1: Data Science in Daily Care Operations -->
+                <h2 class="block-title" style="margin-top: 2rem;">Data Science for Clinical &amp; Home Care Operations</h2>
+                <p>
+                    Artificial intelligence is advancing rapidly, yet clinicians, nurses, and care coordinators still end each day overburdened by routine administrative and documentation demands. Working directly within Viet Home Care's daily operations showed me how administrative backlogs and staffing constraints affect patient care across more than 1,000 households.
+                </p>
+                <p>
+                    To support the care staff and improve operational efficiency, I focused on translating unstructured healthcare records and complex scheduling constraints into reliable, automated tools:
+                </p>
+                <ul class="academic-list" style="margin-bottom: 1.2rem;">
+                    <li>
+                        <strong>Vision-Language Pipelines for Clinical Documentation:</strong> Developed automated data pipelines integrating Vision-Language Models (VLMs) to extract and structure information from unstructured nursing notes, health coaching sessions, home health visit logs, and staff records—relieving nurses from manual data entry so they can dedicate more time to direct patient care.
+                    </li>
+                    <li>
+                        <strong>Machine Learning for Caregiver–Patient Matching:</strong> Built classification and optimization models that pair elderly patients with the most suitable personal care aides based on clinical urgency, care needs, demographics, and compatibility across a pool of over 1,000 clients and aides.
+                    </li>
+                    <li>
+                        <strong>Service Utilization &amp; Operational Analytics:</strong> Analyzed utilization trends and workflow bottlenecks across home health programs, generating actionable insights that improved service delivery, process quality, and care outcomes for 1,000+ households.
+                    </li>
+                </ul>
+                <p>
+                    Seeing firsthand how administrative backlogs and resource shortages directly impact vulnerable patients confirmed a core principle that guides my research: <strong>clinical algorithms must be built around real operational realities and human workflows rather than idealized assumptions.</strong>
+                </p>
+
+                <!-- Section 2: Weekly Senior Community Center Photography -->
+                <h2 class="block-title">Caring for both Health and Spirit: Weekly Senior Community Center</h2>
+                <p>
+                    Supporting an aging population requires more than clinical care, medication schedules, and optimized caregiver queues—<strong>seniors need emotional warmth, social connection, and mental care just as much as clinical treatment.</strong> Loneliness and social isolation remain among the most pressing challenges for older adults, making community gathering spaces vital for their mental well-being and dignity.
+                </p>
+                <p>
+                    Alongside my technical responsibilities as a Data Science Intern, I serve as a <strong>Photographer for the Weekly Senior Community Center</strong> at Viet Home Care. Each week—and during cultural festivals and holiday celebrations—I capture weekly activities, wellness gatherings, and joyful moments shared among the seniors and care team. Stepping out from behind the computer screen to talk, laugh, and document these memories grounds my technical work in the real human lives behind every healthcare dataset.
+                </p>
+
+                <!-- Featured Photo Container -->
+                <div class="poster-container" style="margin-top: 1.8rem;">
+                    <a href="images/me_with_seniors.JPG" target="_blank" rel="noopener noreferrer"
+                        class="poster-link" title="Click to view full-resolution photo">
+                        <img src="images/me_with_seniors.JPG"
+                            alt="Van Phan taking a selfie with seniors and care staff at the Viet Home Care Senior Community Center holiday celebration"
+                            class="poster-img">
+                    </a>
+                    <div class="poster-toolbar">
+                        <span><i class="fas fa-camera"></i> Celebrating with seniors and care staff at the Viet Home Care Weekly Senior Community Center</span>
+                        <div class="poster-toolbar-links">
+                            <a href="images/me_with_seniors.JPG" target="_blank" rel="noopener noreferrer">Full Size Photo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tags -->
+                <div class="tag-row" style="margin-top: 1.5rem;">
+                    <span class="tag-pill">Healthcare Data Science</span>
+                    <span class="tag-pill">Vision-Language Models (VLMs)</span>
+                    <span class="tag-pill">Caregiver Matching</span>
+                    <span class="tag-pill">Eldercare &amp; Mental Well-Being</span>
+                    <span class="tag-pill">Community Photography</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
