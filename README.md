@@ -34,8 +34,8 @@ The website is structured around an academic researcher layout featuring clean t
   - Conference presentations and posters from SIAM MDS 2026, GSURC 2026, SURS 2025, GSURC 2025, SURS 2024, ViSEF 2022, and HCMUT Fair 2022
 
 - Community and Social Impact (social-impact.html):
-  - Data Science for Clinical and Home Care Operations at Viet Home Care LLC (VLM documentation pipelines, caregiver-patient matching models, and service utilization analytics across 1,000+ elderly households)
-  - Weekly Senior Community Center Photography highlighting mental well-being, social connection, and cultural celebrations for older adults
+  - Personal reflection and photography from the Weekly Senior Community Center
+  - Caring for both health and spirit: the emotional impact of community photography, fostering self-confidence, dignity, and intergenerational joy among elders
 
 ### Responsive Design
 
